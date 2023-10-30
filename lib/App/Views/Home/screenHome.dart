@@ -1,18 +1,16 @@
 // ignore_for_file: file_names
 
-import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:bottom_bar_matu/bottom_bar/bottom_bar_bubble.dart';
 import 'package:bottom_bar_matu/bottom_bar_item.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:flutter/services.dart';
 import 'package:take_save_display_12/App/Model/Majala/majalamodel.dart';
-import 'package:take_save_display_12/App/Model/data.dart';
-import 'package:take_save_display_12/App/Style/textstyle.dart';
-import 'package:take_save_display_12/App/Views/Home/360dgr/screen360.dart';
+import 'package:take_save_display_12/App/Views/Home/360dgr/Notification/screenNotification.dart';
 import 'package:take_save_display_12/App/Views/Home/Event/screenEvents.dart';
-import 'package:take_save_display_12/App/Views/Home/QR/screenScanQr.dart';
 import 'package:take_save_display_12/App/Views/Home/Sttings/screenSettings.dart';
 import 'package:take_save_display_12/App/Views/Home/screenHomeDetails.dart';
+import 'package:take_save_display_12/App/Views/widgets/buttons.dart';
+import 'package:take_save_display_12/main.dart';
 
 class ScreenHome extends StatefulWidget {
   ScreenHome({super.key});
@@ -40,11 +38,20 @@ class _ScreenHomeState extends State<ScreenHome> {
 
   List<Widget> listscreen = [
     const Home(),
-    // Container(),
     Demo01(imageUrlList: listofmajalat),
+    NotificationScreen(),
     const ScreenSettings(),
   ];
   List<Widget> listscreenBACK = [
+    Container(
+      color: Colors.amber,
+      child: Image.asset(
+        "assets/images/back5.png",
+        height: 2000,
+        width: double.infinity,
+        fit: BoxFit.cover,
+      ),
+    ),
     Container(
       color: Colors.amber,
       child: Image.asset(
@@ -93,12 +100,19 @@ class _ScreenHomeState extends State<ScreenHome> {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Card(
+                elevation: 4,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(
+                      16.0), // Change the radius value as needed
+                ),
                 child: BottomBarBubble(
-                  height: 60,
+                  height: 50,
                   selectedIndex: _bottomNavIndex,
                   color: Color.fromARGB(255, 255, 217, 5),
                   onSelect: (index) {
                     setState(() {
+                      if (settingsapp.read("viber")) HapticFeedback.vibrate();
+
                       _bottomNavIndex = index;
                     });
                   },
@@ -114,6 +128,10 @@ class _ScreenHomeState extends State<ScreenHome> {
                     // ),
                     BottomBarItem(
                       iconData: Icons.dynamic_feed,
+                      // label: 'Notification',
+                    ),
+                    BottomBarItem(
+                      iconData: Icons.notification_important,
                       // label: 'Notification',
                     ),
                     BottomBarItem(

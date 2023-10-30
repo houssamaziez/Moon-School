@@ -36,13 +36,18 @@ List<Placemoon> listPlaceMoon = [
   Placemoon(
       title: "قاعة الموسيقى",
       avatar: 'assets/8.png',
-      image360: 'assets/images360/8.jpg',
+      image360: 'assets/images360/IMG_0115.jpg',
       listimage: [
         ImagesMajala(
             title: "مقتطفات من الحصة ",
             image:
                 "https://firebasestorage.googleapis.com/v0/b/moon-f0010.appspot.com/o/8.jpg?alt=media&token=aac5adc4-df78-4bed-aa33-28fdad777fe7&_gl=1*1kga57q*_ga*MTUyNzc4Mjg4NC4xNjk4Mzk2MjU5*_ga_CW55HF8NVT*MTY5ODM5NjI2MC4xLjEuMTY5ODM5Njg5Ni42MC4wLjA.",
             details: "استمتاع التلاميذ في حصة الموسيقى "),
+        ImagesMajala(
+            title: "مقتطفات من الحصة ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/IMG_0114.jpg?alt=media&token=350a0ce3-7660-4e13-9801-98d28a6b7b70&_gl=1*5d1135*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5ODU2OTQ4Ni44LjEuMTY5ODU2OTg5Ni4yNy4wLjA.",
+            details: "استمتاع التلاميذ في حصة الرسم "),
         ImagesMajala(
             title: "مقتطفات من الحصة ",
             image:
@@ -151,18 +156,37 @@ List<Placemoon> listPlaceMoon = [
   Placemoon(
       title: "المطعم",
       avatar: 'assets/5.png',
-      image360: 'assets/images/IMG_0047.HEIC',
+      image360: 'assets/images360/IMG_0106.jpg',
       listimage: [
         ImagesMajala(
-            title: "مقتطفات من الحصة ",
+            title: "مقتطفات من من المطعم ",
             image:
-                "https://firebasestorage.googleapis.com/v0/b/moon-f0010.appspot.com/o/3.jpg?alt=media&token=b9e62126-9c5c-48d8-a518-2b70ffb8b5c7&_gl=1*14h7s3x*_ga*MTUyNzc4Mjg4NC4xNjk4Mzk2MjU5*_ga_CW55HF8NVT*MTY5ODM5NjI2MC4xLjEuMTY5ODM5NzQ2MS4zOC4wLjA.",
-            details: "استمتاع التلاميذ في حصة الرسم "),
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/IMG_0111.jpg?alt=media&token=d8e17ac3-2193-40f3-a6c2-29ce72e91212&_gl=1*s61i6t*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5ODU2OTQ4Ni44LjEuMTY5ODU2OTgzOC45LjAuMA..",
+            details: " استمتاع بمشاهدة المطعم"),
         ImagesMajala(
-            title: "مقتطفات من الحصة ",
+            title: "مقتطفات من من المطعم ",
             image:
-                "https://firebasestorage.googleapis.com/v0/b/moon-f0010.appspot.com/o/3.jpg?alt=media&token=b9e62126-9c5c-48d8-a518-2b70ffb8b5c7&_gl=1*14h7s3x*_ga*MTUyNzc4Mjg4NC4xNjk4Mzk2MjU5*_ga_CW55HF8NVT*MTY5ODM5NjI2MC4xLjEuMTY5ODM5NzQ2MS4zOC4wLjA.",
-            details: "استمتاع التلاميذ في حصة الرسم "),
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/IMG_0108.jpg?alt=media&token=38454dc6-78e1-418e-9c9f-3fce1b40a763&_gl=1*ijghdu*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5ODU2OTQ4Ni44LjEuMTY5ODU2OTgwNC40My4wLjA.",
+            details: " استمتاع بمشاهدة المطعم"),
+        ImagesMajala(
+            title: "مقتطفات من من المطعم ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/IMG_0109.jpg?alt=media&token=f8a6d02c-5675-4f98-aa35-c2c9725cd1b4&_gl=1*1doz5vi*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5ODU2OTQ4Ni44LjEuMTY5ODU2OTc4Ny42MC4wLjA.",
+            details: " استمتاع بمشاهدة المطعم"),
+        ImagesMajala(
+            title: "مقتطفات من من المطعم ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/IMG_0112.jpg?alt=media&token=a5bec5cc-16b4-45ab-8441-abc7b53b7e9c&_gl=1*77947m*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5ODU2OTQ4Ni44LjEuMTY5ODU2OTg2My42MC4wLjA.",
+            details: " استمتاع بمشاهدة المطعم"),
+        ImagesMajala(
+            title: "مقتطفات من من المطعم ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/IMG_0113.jpg?alt=media&token=9cceb814-5b0e-477a-ba8d-bdc59712ad83&_gl=1*9dztqw*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5ODU2OTQ4Ni44LjEuMTY5ODU2OTg4MC40My4wLjA.",
+            details: " استمتاع بمشاهدة المطعم"),
+        ImagesMajala(
+            title: "مقتطفات من من المطعم ",
+            image: " ",
+            details: " استمتاع بمشاهدة المطعم"),
       ],
       index: 0),
 ];

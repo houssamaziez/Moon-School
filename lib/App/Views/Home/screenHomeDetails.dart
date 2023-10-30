@@ -7,6 +7,7 @@ import 'package:take_save_display_12/App/Model/Home/place.dart';
 import 'package:take_save_display_12/App/Model/data.dart';
 import 'package:take_save_display_12/App/Style/textstyle.dart';
 import 'package:take_save_display_12/App/Views/Home/360dgr/screen360.dart';
+import 'package:take_save_display_12/App/Views/widgets/loadingPage.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -193,7 +194,7 @@ class _HomeState extends State<Home> {
                                                           .image,
                                                   // You can also provide a placeholder image and error widget if desired.
                                                   placeholder: (context, url) =>
-                                                      CircularProgressIndicator(),
+                                                      Center(child: spinkit),
                                                   errorWidget:
                                                       (context, url, error) =>
                                                           Icon(Icons.error),
@@ -211,8 +212,8 @@ class _HomeState extends State<Home> {
                                         fit: BoxFit.cover,
                                         height: 200,
                                         width: double.infinity,
-                                        placeholder: (context, url) =>
-                                            Container(),
+                                        placeholder: (context, url) => Center(
+                                            child: Center(child: spinkit)),
                                         errorWidget: (context, url, error) =>
                                             Icon(Icons.error),
                                       ),

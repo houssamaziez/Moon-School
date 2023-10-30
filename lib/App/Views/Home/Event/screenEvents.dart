@@ -1,12 +1,14 @@
 import 'dart:ui';
 
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:fade_shimmer/fade_shimmer.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gallery_3d/gallery3d.dart';
 import 'package:take_save_display_12/App/Model/Home/Image/showImage.dart';
 import 'package:take_save_display_12/App/Model/Majala/majalamodel.dart';
 import 'package:take_save_display_12/App/Style/textstyle.dart';
+import 'package:take_save_display_12/App/Views/widgets/loadingPage.dart';
 
 class Demo01 extends StatefulWidget {
   final List<Majala> imageUrlList;
@@ -72,7 +74,8 @@ class _Demo01State extends State<Demo01> {
             child: CachedNetworkImage(
               imageUrl: widget.imageUrlList[index].image,
               fit: BoxFit.fill,
-              placeholder: (context, url) => CircularProgressIndicator(),
+              placeholder: (context, url) =>
+                  Center(child: Center(child: spinkit)),
               errorWidget: (context, url, error) => Icon(Icons.error),
             ),
           );
@@ -135,7 +138,7 @@ class _Demo01State extends State<Demo01> {
                                           .image,
                                       // You can also provide a placeholder image and error widget if desired.
                                       placeholder: (context, url) =>
-                                          CircularProgressIndicator(),
+                                          Center(child: spinkit),
                                       errorWidget: (context, url, error) =>
                                           Icon(Icons.error),
                                     ),
@@ -174,7 +177,7 @@ class _Demo01State extends State<Demo01> {
                                           height: 270,
                                           width: double.infinity,
                                           placeholder: (context, url) =>
-                                              Container(),
+                                              Center(child: spinkit),
                                           errorWidget: (context, url, error) =>
                                               Icon(Icons.error),
                                         ),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1051605559448",
+    "project_id": "moon-school-37b5d",
+    "storage_bucket": "moon-school-37b5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051605559448:android:9b8093804229610e8a88ed",
+        "android_client_info": {
+          "package_name": "com.batna.moonschool"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9GF_dSXbUMnmjbm4b7mXjO9firwOGGTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

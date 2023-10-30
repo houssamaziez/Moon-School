@@ -7,6 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:panorama/panorama.dart';
+import 'package:take_save_display_12/App/Views/widgets/loadingPage.dart';
 
 import '../../../../blocs/theta/theta_bloc.dart';
 
@@ -41,8 +42,7 @@ class Screen306 extends StatelessWidget {
                       fit: BoxFit.cover,
                       height: 200,
                       width: double.infinity,
-                      placeholder: (context, url) =>
-                          CircularProgressIndicator(),
+                      placeholder: (context, url) => Center(child: spinkit),
                       errorWidget: (context, url, error) => Icon(Icons.error),
                     ),
                   ),
@@ -69,8 +69,7 @@ class Screen306 extends StatelessWidget {
                       fit: BoxFit.cover,
                       height: 200,
                       width: double.infinity,
-                      placeholder: (context, url) =>
-                          CircularProgressIndicator(),
+                      placeholder: (context, url) => Center(child: spinkit),
                       errorWidget: (context, url, error) => Icon(Icons.error),
                     ),
                   ),
@@ -96,8 +95,7 @@ class Screen306 extends StatelessWidget {
                       fit: BoxFit.cover,
                       height: 200,
                       width: double.infinity,
-                      placeholder: (context, url) =>
-                          CircularProgressIndicator(),
+                      placeholder: (context, url) => Center(child: spinkit),
                       errorWidget: (context, url, error) => Icon(Icons.error),
                     ),
                   ),
@@ -124,8 +122,7 @@ class Screen306 extends StatelessWidget {
                       fit: BoxFit.cover,
                       height: 200,
                       width: double.infinity,
-                      placeholder: (context, url) =>
-                          CircularProgressIndicator(),
+                      placeholder: (context, url) => Center(child: spinkit),
                       errorWidget: (context, url, error) => Icon(Icons.error),
                     ),
                   ),
