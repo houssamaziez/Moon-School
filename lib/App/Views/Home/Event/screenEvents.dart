@@ -61,12 +61,12 @@ class _Demo01State extends State<Demo01> {
           print(index);
         },
         onClickItem: (index) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => widget.imageUrlList[currentIndex].pdf,
-            ),
-          );
+          // Navigator.push(
+          //   context,
+          //   MaterialPageRoute(
+          //     builder: (context) => widget.imageUrlList[currentIndex].pdf,
+          //   ),
+          // );
         },
         itemBuilder: (context, index) {
           return Padding(
@@ -94,7 +94,6 @@ class _Demo01State extends State<Demo01> {
         elevation: 1,
         centerTitle: true,
       ),
-      backgroundColor: const Color.fromARGB(255, 243, 243, 243),
       body: Stack(
         children: [
           SingleChildScrollView(
@@ -109,9 +108,18 @@ class _Demo01State extends State<Demo01> {
                     ),
                   ],
                 ),
-                Text(
-                  widget.imageUrlList[currentIndex].title,
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                Padding(
+                  padding: const EdgeInsets.only(left: 23),
+                  child: Text(
+                    widget.imageUrlList[currentIndex].title,
+                    style: TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.grey),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
                 ),
                 ListView.builder(
                   shrinkWrap: true,

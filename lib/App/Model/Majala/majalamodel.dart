@@ -22,7 +22,7 @@ List<Majala> listofmajalat = [
   Majala(
       title: "ركوب الخيل ",
       image:
-          "https://scontent.fblj1-1.fna.fbcdn.net/v/t39.30808-6/336532437_906693473897671_8352380874778072106_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=30BjV4OcJgYAX9wk61N&_nc_ht=scontent.fblj1-1.fna&oh=00_AfAnYQ0hMor3SOHs9O1K_Pubk5d8BGDOs1-EmPBFypRBPQ&oe=654047F0",
+          "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/333.jpg?alt=media&token=6bf84611-0d70-445c-8200-7d3d8fcf0ba6&_gl=1*mz37lh*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTI3ODUxNS4xMy4xLjE2OTkyNzg2NDguNTYuMC4w",
       pdf: PDFViewerCachedFromUrl(
         name: "خوارزميات الحاسوب",
         title: "خوارزميات الحاسوب",
@@ -34,7 +34,7 @@ List<Majala> listofmajalat = [
   Majala(
       title: "يناير",
       image:
-          "https://scontent.fblj1-1.fna.fbcdn.net/v/t39.30808-6/323245227_561630992536066_6906935262771700723_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=m8e1wtv3eHoAX_8Rr8v&_nc_ht=scontent.fblj1-1.fna&oh=00_AfDv8QAUNRcMeG075gRArIzWKg4DFj3afHe-zZd8WYwjww&oe=65412646",
+          "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/2222.jpg?alt=media&token=0005538f-90c8-46bf-a103-4746cc3be70e&_gl=1*wmcqdy*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTI3ODUxNS4xMy4xLjE2OTkyNzg2ODAuMjQuMC4w",
       pdf: PDFViewerCachedFromUrl(
         name: "خوارزميات الحاسوب",
         title: "خوارزميات الحاسوب",
@@ -46,7 +46,7 @@ List<Majala> listofmajalat = [
   Majala(
       title: "كارتينغ",
       image:
-          "https://scontent.fblj1-2.fna.fbcdn.net/v/t39.30808-6/336321629_1233174203989798_6062555744415083697_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=EakULhoBJQUAX_FMJkF&_nc_ht=scontent.fblj1-2.fna&oh=00_AfCNKbB9WgbQqIqHmjVe6ZVx45dhLzYyLo3WrfL_qa7Ikw&oe=6540B020",
+          "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/1111.jpg?alt=media&token=273d72d1-a8fc-425f-a56a-40d8b1c75b5e&_gl=1*12lwmth*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTI3ODUxNS4xMy4xLjE2OTkyNzg3MDIuMi4wLjA.",
       pdf: PDFViewerCachedFromUrl(
         name: "خوارزميات الحاسوب",
         title: "خوارزميات الحاسوب",

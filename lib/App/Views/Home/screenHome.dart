@@ -5,12 +5,13 @@ import 'package:bottom_bar_matu/bottom_bar_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:take_save_display_12/App/Model/Majala/majalamodel.dart';
-import 'package:take_save_display_12/App/Views/Home/360dgr/Notification/screenNotification.dart';
+import 'package:take_save_display_12/App/Views/Home/Notification/screenNotification.dart';
 import 'package:take_save_display_12/App/Views/Home/Event/screenEvents.dart';
 import 'package:take_save_display_12/App/Views/Home/Sttings/screenSettings.dart';
 import 'package:take_save_display_12/App/Views/Home/screenHomeDetails.dart';
 import 'package:take_save_display_12/App/Views/widgets/buttons.dart';
 import 'package:take_save_display_12/main.dart';
+import 'package:vibration/vibration.dart';
 
 class ScreenHome extends StatefulWidget {
   ScreenHome({super.key});
@@ -111,7 +112,8 @@ class _ScreenHomeState extends State<ScreenHome> {
                   color: Color.fromARGB(255, 255, 217, 5),
                   onSelect: (index) {
                     setState(() {
-                      if (settingsapp.read("viber")) HapticFeedback.vibrate();
+                      if (settingsapp.read("viber"))
+                        Vibration.vibrate(duration: 100);
 
                       _bottomNavIndex = index;
                     });

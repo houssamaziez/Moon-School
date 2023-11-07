@@ -1,76 +1,93 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_windowmanager/flutter_windowmanager.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:take_save_display_12/App/Views/Home/360dgr/Notification/screenNotification.dart';
+import 'package:take_save_display_12/App/Controller/post.dart';
+import 'package:take_save_display_12/App/Model/Home/Post/post.dart';
+import 'package:take_save_display_12/App/Views/Home/Notification/screenNotification.dart';
 import 'App/MyApp.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
-// void main() async {
-//   WidgetsFlutterBinding.ensureInitialized();
-//   await GetStorage.init();
-//   await Firebase.initializeApp(
-//     options: DefaultFirebaseOptions.currentPlatform,
-//   );
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await GetStorage.init();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  if (notificationList.read("list") == null) {
+    notificationList.write("list", notifications);
+  }
+  if (settingsapp.read("notification") == null) {
+    settingsapp.write("notification", true);
+  }
+  if (settingsapp.read("viber") == null) {
+    settingsapp.write("viber", true);
+  }
+  FirebaseMessaging.onBackgroundMessage(firebasemessagingbackgoudhandler);
 
-//   if (notificationList.read("list") == null) {
-//     notificationList.write("list", notifications);
-//   }
-
-//   if (settingsapp.read("notification") == null) {
-//     settingsapp.write("notification", true);
-//   }
-//   if (settingsapp.read("viber") == null) {
-//     settingsapp.write("viber", true);
-//   }
-//   FirebaseMessaging.onBackgroundMessage(firebasemessagingbackgoudhandler);
-// // if (settingsapp.read("notification") != false) {
-// //   }
-//   runApp(const MyApp());
-//   if (settingsapp.read("notification") != false) voidrequiestPermesion();
-// }
-import 'package:flutter/material.dart';
-import 'package:flutter_windowmanager/flutter_windowmanager.dart';
+  FlutterWindowManager.addFlags(FlutterWindowManager.FLAG_SECURE);
+  runApp(const MyApp());
+  if (settingsapp.read("notification") != false) voidrequiestPermesion();
+}
 
 GetStorage settingsapp = GetStorage();
 GetStorage notificationList = GetStorage();
 
-void main() {
-  runApp(MyApp());
+class FirestoreTestScreen extends StatefulWidget {
+  @override
+  _FirestoreTestScreenState createState() => _FirestoreTestScreenState();
 }
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: ScreenshotBlockExample(),
-    );
-  }
-}
-
-class ScreenshotBlockExample extends StatefulWidget {
-  @override
-  _ScreenshotBlockExampleState createState() => _ScreenshotBlockExampleState();
-}
-
-class _ScreenshotBlockExampleState extends State<ScreenshotBlockExample> {
-  @override
-  void initState() {
-    super.initState();
-    // Block taking screenshots.
-    FlutterWindowManager.addFlags(FlutterWindowManager.FLAG_SECURE);
-  }
+class _FirestoreTestScreenState extends State<FirestoreTestScreen> {
+  String documentId = "efzeff"; // Replace with the actual document ID
+  String iduser = "efzeff";
 
   @override
   Widget build(BuildContext context) {
+    bool liked = true;
+
     return Scaffold(
       appBar: AppBar(
-        title: Text('Screenshot Blocking Example'),
+        title: Text('Firestore Test Screen'),
       ),
       body: Center(
-        child: Text(
-          'Screenshots are Blocked',
-          style: TextStyle(fontSize: 20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                // Add a new document to Firestore
+                Post post = Post(
+                  title: 'Test Post',
+                  detail: 'This is a test post.',
+                  time: '2023-11-06 15:30:00',
+                  jams: ['jam1', 'jam2'],
+                  id: "efzeff",
+                  ispost: true,
+                );
+                addItemToFirestoreWithCustomID(
+                  "efzeff",
+                  post,
+                );
+              },
+              child: Text('Add Document to Firestore'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Update the document in Firestore
+                toggleLike(documentId, iduser, liked);
+              },
+              child: Text('Toggle Like in Firestore'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Delete a document from Firestore
+                deleteItemFromFirestore(documentId);
+              },
+              child: Text('Delete Document from Firestore'),
+            ),
+          ],
         ),
       ),
     );

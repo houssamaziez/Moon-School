@@ -1,32 +1,38 @@
 import 'package:flutter/material.dart';
 
 Future<void> dialogBuilder(BuildContext context) {
-  String selectedLanguage = "English"; // Default language
+  String selectedLanguage = "عربية"; // Default language
 
   return showDialog<void>(
     context: context,
     builder: (BuildContext context) {
       return AlertDialog(
         backgroundColor: Color.fromARGB(255, 230, 230, 230),
-        title: const Text('Language Selection'),
+        title: const Text(
+          'اختيار اللغة',
+          textAlign: TextAlign.center,
+        ),
         content: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             const Text(
-              'Select your preferred language:',
+              'اختر لغتك المفضلة:',
+              textAlign: TextAlign.center,
             ),
             RadioListTile<String>(
+              title: const Text('عربية'),
+              value: "عربية",
               activeColor: Colors.amber,
-              title: const Text('English'),
-              value: "English",
               groupValue: selectedLanguage,
               onChanged: (value) {
                 selectedLanguage = value!;
               },
             ),
             RadioListTile<String>(
-              title: const Text('عربية'),
-              value: "عربية",
+              activeColor: Colors.amber,
+              title: const Text('English'),
+              value: "English",
               groupValue: selectedLanguage,
               onChanged: (value) {
                 selectedLanguage = value!;
@@ -42,7 +48,7 @@ Future<void> dialogBuilder(BuildContext context) {
                   textStyle: Theme.of(context).textTheme.labelLarge,
                 ),
                 child: const Text(
-                  'Cancel',
+                  'ٌإلغاء',
                   style: TextStyle(color: Colors.amber),
                 ),
                 onPressed: () {
@@ -55,7 +61,7 @@ Future<void> dialogBuilder(BuildContext context) {
                   textStyle: Theme.of(context).textTheme.labelLarge,
                 ),
                 child: const Text(
-                  'Apply',
+                  'تأكيد',
                   style: TextStyle(color: Colors.amber),
                 ),
                 onPressed: () {

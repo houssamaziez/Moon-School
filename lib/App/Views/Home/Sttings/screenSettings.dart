@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:take_save_display_12/App/Style/textstyle.dart';
 import 'package:take_save_display_12/App/Views/widgets/buttons.dart';
 import 'package:take_save_display_12/App/Views/widgets/dialogs.dart';
 import 'package:take_save_display_12/main.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:vibration/vibration.dart';
 
 class ScreenSettings extends StatefulWidget {
   const ScreenSettings({super.key});
@@ -21,13 +23,8 @@ class _ScreenSettingsState extends State<ScreenSettings> {
       textDirection: TextDirection.rtl,
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        body: ListView(
           children: [
-            SizedBox(
-              height: 80,
-            ),
             Padding(
               padding: const EdgeInsets.only(right: 20),
               child: Text(
@@ -36,7 +33,7 @@ class _ScreenSettingsState extends State<ScreenSettings> {
                 textAlign: TextAlign.start,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
@@ -51,7 +48,8 @@ class _ScreenSettingsState extends State<ScreenSettings> {
               child: ListTile(
                 trailing: InkWell(
                   onTap: () {
-                    if (!settingsapp.read("viber")) HapticFeedback.vibrate();
+                    if (!settingsapp.read("viber"))
+                      Vibration.vibrate(duration: 500);
                     setState(() {
                       settingsapp.write("viber", !settingsapp.read("viber"));
                     });
@@ -63,19 +61,19 @@ class _ScreenSettingsState extends State<ScreenSettings> {
                     height: 40,
                   ),
                 ),
-                leading: Padding(
+                leading: const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Icon(
                     Icons.vibration,
                     color: Color.fromARGB(255, 199, 199, 199),
                   ),
                 ),
-                subtitle: Text(
+                subtitle: const Text(
                   "اهتزازات داخل التطبيق",
                   style: TextStyle(
                       color: Color.fromARGB(255, 189, 189, 189), fontSize: 12),
                 ),
-                title: Text(
+                title: const Text(
                   "الاهتزازت",
                   style: TextStyle(
                       color: Color.fromARGB(255, 236, 236, 236),
@@ -97,7 +95,7 @@ class _ScreenSettingsState extends State<ScreenSettings> {
                 trailing: InkWell(
                   onTap: () {
                     if (!settingsapp.read("notification"))
-                      HapticFeedback.vibrate();
+                      Vibration.vibrate(duration: 100);
                     setState(() {
                       settingsapp.write(
                           "notification", !settingsapp.read("notification"));
@@ -110,19 +108,19 @@ class _ScreenSettingsState extends State<ScreenSettings> {
                     height: 40,
                   ),
                 ),
-                leading: Padding(
+                leading: const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Icon(
                     Icons.notifications,
                     color: Color.fromARGB(255, 199, 199, 199),
                   ),
                 ),
-                subtitle: Text(
+                subtitle: const Text(
                   "تنبيه اشعارات التطبيق",
                   style: TextStyle(
                       color: Color.fromARGB(255, 189, 189, 189), fontSize: 12),
                 ),
-                title: Text(
+                title: const Text(
                   "الاشعارات",
                   style: TextStyle(
                       color: Color.fromARGB(255, 236, 236, 236),
@@ -144,19 +142,19 @@ class _ScreenSettingsState extends State<ScreenSettings> {
                 onTap: () async {
                   dialogBuilder(context);
                 },
-                leading: Padding(
+                leading: const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Icon(
                     Icons.language,
                     color: Color.fromARGB(255, 199, 199, 199),
                   ),
                 ),
-                subtitle: Text(
+                subtitle: const Text(
                   "تغيير اللغة",
                   style: TextStyle(
                       color: Color.fromARGB(255, 189, 189, 189), fontSize: 12),
                 ),
-                title: Text(
+                title: const Text(
                   "اللغة",
                   style: TextStyle(
                       color: Color.fromARGB(255, 236, 236, 236),
@@ -165,7 +163,7 @@ class _ScreenSettingsState extends State<ScreenSettings> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Padding(
@@ -176,7 +174,7 @@ class _ScreenSettingsState extends State<ScreenSettings> {
                 textAlign: TextAlign.start,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
@@ -188,25 +186,32 @@ class _ScreenSettingsState extends State<ScreenSettings> {
                       image: AssetImage(
                         "assets/images/buttonSetting.png",
                       ))),
-              child: ListTile(
-                leading: Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Icon(
-                    Icons.policy,
-                    color: Color.fromARGB(255, 199, 199, 199),
+              child: InkWell(
+                onTap: () {
+                  launchURL(
+                      "https://web.facebook.com/people/Moon-school-MH/100084982381620/?sk=photos&_rdc=1&_rdr");
+                },
+                child: const ListTile(
+                  leading: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Icon(
+                      Icons.policy,
+                      color: Color.fromARGB(255, 199, 199, 199),
+                    ),
                   ),
-                ),
-                subtitle: Text(
-                  "اتبع سياساتنا التي تفيدك.",
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 189, 189, 189), fontSize: 12),
-                ),
-                title: Text(
-                  "سياسة الخصوصية",
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 236, 236, 236),
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold),
+                  subtitle: Text(
+                    "اتبع سياساتنا التي تفيدك.",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 189, 189, 189),
+                        fontSize: 12),
+                  ),
+                  title: Text(
+                    "سياسة الخصوصية",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 236, 236, 236),
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
               ),
             ),
@@ -221,10 +226,10 @@ class _ScreenSettingsState extends State<ScreenSettings> {
                       ))),
               child: InkWell(
                 onTap: () {
-                  launchURL(
+                  Share.share(
                       "https://play.google.com/store/apps/details?id=com.batna.moonschool");
                 },
-                child: ListTile(
+                child: const ListTile(
                   leading: Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Icon(
@@ -259,6 +264,8 @@ Future<void> launchURL(String url) async {
   if (await canLaunchUrl(Uri.parse(url))) {
     await launchUrl(Uri.parse(url));
   } else {
+    await launchUrl(Uri.parse(url));
+
     throw 'Could not launch $url';
   }
 }

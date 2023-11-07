@@ -101,8 +101,20 @@ class _HomeState extends State<Home> {
                       title: listPlaceMoon[05].title,
                       image: listPlaceMoon[05].avatar,
                       indext: 05),
+                  newMethod(
+                      title: listPlaceMoon[06].title,
+                      image: listPlaceMoon[06].avatar,
+                      indext: 06),
                 ],
                 onStepReached: (index) => setState(() => activeStep = index),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  " مشاهدة ${listPlaceMoon[activeStep].title} بتقنية \°360    ",
+                  textAlign: TextAlign.end,
+                  style: TextStyle(fontSize: 18, color: Colors.grey),
+                ),
               ),
               InkWell(
                 onTap: () {},
@@ -118,19 +130,31 @@ class _HomeState extends State<Home> {
                     child: Card(
                       elevation: 5,
                       child: SizedBox(
-                        height: 200,
+                        height: 210,
                         width: double.infinity,
-                        child: Column(
+                        child: Stack(
                           children: [
-                            Image.asset(
-                              // image360[activeStep],
-                              'assets/vr.png',
-                              height: 150,
+                            Center(
+                              child: Padding(
+                                padding: const EdgeInsets.only(top: 0),
+                                child: Image.asset(
+                                  // image360[activeStep],
+                                  'assets/vr.gif',
+                                  height: 180,
+                                ),
+                              ),
                             ),
-                            const SizedBox(height: 5),
-                            Text(
-                              'اضغط للمشاهدة ',
-                              style: TextStyle(fontSize: 18),
+                            Positioned(
+                              bottom: 5,
+                              left: 15,
+                              right: 0,
+                              child: Center(
+                                child: Text(
+                                  'اضغط للمشاهدة ',
+                                  style: TextStyle(
+                                      fontSize: 16, color: Colors.grey),
+                                ),
+                              ),
                             )
                           ],
                         ),
@@ -144,7 +168,7 @@ class _HomeState extends State<Home> {
                 child: Text(
                   "المزيد من الصور",
                   textAlign: TextAlign.end,
-                  style: TextStyle(fontSize: 18),
+                  style: TextStyle(fontSize: 18, color: Colors.grey),
                 ),
               ),
               ListView.builder(

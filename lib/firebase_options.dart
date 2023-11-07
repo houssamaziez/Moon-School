@@ -6,8 +6,9 @@ import 'package:flutter/foundation.dart'
     show TargetPlatform, defaultTargetPlatform, kDebugMode, kIsWeb;
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:take_save_display_12/App/Views/Home/360dgr/Notification/screenNotification.dart';
+import 'package:take_save_display_12/App/Views/Home/Notification/screenNotification.dart';
 import 'package:take_save_display_12/main.dart';
+import 'package:vibration/vibration.dart';
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
 ///
@@ -80,6 +81,8 @@ Future<void> firebasemessagingbackgoudhandler(RemoteMessage message) async {
   //       message: "${message.notification!.body}"),
   // );
   // notificationList.write("list", notifications);
+  Vibration.vibrate(duration: 1000);
+
   print(
       'title back : ${message.notification!.title} | body: ${message.notification!.body}');
 }
@@ -106,15 +109,15 @@ voidrequiestPermesion() async {
   FirebaseMessaging.onMessage.listen((RemoteMessage message) {
     print(
         'title: ${message.notification!.title} | body: ${message.notification!.body}');
-    // Get.snackbar(
-    //     "${message.notification!.title}", "${message.notification!.body}");
-    // HapticFeedback.vibrate();
-    // notifications = notificationList.read("list");
-    // notifications.add(
-    //   NotificationItem(
-    //       title: "${message.notification!.title}",
-    //       message: "${message.notification!.body}"),
-    // );
+    Get.snackbar(
+        "${message.notification!.title}", "${message.notification!.body}");
+    Vibration.vibrate(duration: 1000);
+    notifications = notificationList.read("list");
+    notifications.add(
+      NotificationItem(
+          title: "${message.notification!.title}",
+          message: "${message.notification!.body}"),
+    );
     // notificationList.write("list", notifications);
   });
 }
