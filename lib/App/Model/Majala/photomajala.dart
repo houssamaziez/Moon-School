@@ -180,3 +180,45 @@ final List<ImagesMajala> listimagemajala3 = [
           "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/INFO%2FKARTING%2F336496952_133844946111171_7615988026682167186_n.jpg?alt=media&token=7006956f-d5ea-4833-85ca-b36c3dd921a3&_gl=1*157ptdp*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5ODcwMjM4NC4xMS4xLjE2OTg3MDI1MTUuNTEuMC4w",
       details: " مقطتطفات على الرحلة "),
 ];
+final List<ImagesMajala> listimagemajala4 = [
+  ImagesMajala(
+      title: 'رحلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%2FIMG-20221219-WA0016.jpg?alt=media&token=16d2cf87-908e-457c-9698-424da2863ebd",
+      details: " استمتاع التلاميذ برحلة الى حديقة الحيوان"),
+  ImagesMajala(
+      title: 'رحلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%2FIMG-20221219-WA0023.jpg?alt=media&token=5804e0c4-823d-4b9d-83e5-627f47312bd0",
+      details: " استمتاع التلاميذ برحلة الى حديقة الحيوان"),
+  ImagesMajala(
+      title: 'رحلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%2FIMG-20221219-WA0029.jpg?alt=media&token=af94d8d3-a3c2-4565-9b52-b2884b4f9636",
+      details: " استمتاع التلاميذ برحلة الى حديقة الحيوان"),
+  ImagesMajala(
+      title: 'رحلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%2FIMG-20221219-WA0042.jpg?alt=media&token=c98dd9d1-b0e8-4aeb-bb11-95fd59c7fcd9",
+      details: " استمتاع التلاميذ برحلة الى حديقة الحيوان"),
+  ImagesMajala(
+      title: 'رحلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%2FIMG-20221219-WA0048.jpg?alt=media&token=c898f907-7a04-4dff-adf3-c23053dbcbbd",
+      details: " استمتاع التلاميذ برحلة الى حديقة الحيوان"),
+  ImagesMajala(
+      title: 'رحلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%2FIMG-20221219-WA0054.jpg?alt=media&token=237c8555-f7a9-432e-91df-d480ff12bf0e",
+      details: " استمتاع التلاميذ برحلة الى حديقة الحيوان"),
+  ImagesMajala(
+      title: 'رحلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%2FIMG-20221219-WA0081.jpg?alt=media&token=ce1ed985-fbdd-49a9-a31a-f8509da2cf24",
+      details: " استمتاع التلاميذ برحلة الى حديقة الحيوان"),
+  ImagesMajala(
+      title: 'رحلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%2FIMG-20221219-WA0092.jpg?alt=media&token=61e040e4-e7d1-4e04-b201-7f05d3f89063",
+      details: " استمتاع التلاميذ برحلة الى حديقة الحيوان"),
+];

@@ -19,7 +19,7 @@ List<Placemoon> listPlaceMoon = [
   Placemoon(
       title: "المدرسة",
       avatar: 'assets/1.png',
-      image360: 'assets/images360/IMG_0186.jpg',
+      image360: 'assets/images360/IMG_0444.jpg',
       listimage: [
         ImagesMajala(
             title: "المدرسة ",
@@ -103,7 +103,7 @@ List<Placemoon> listPlaceMoon = [
       ],
       index: 0),
   Placemoon(
-      title: "الساحة",
+      title: "الرواق",
       avatar: 'assets/4.png',
       image360: 'assets/images360/IMG_0077.jpg',
       listimage: [
@@ -121,6 +121,40 @@ List<Placemoon> listPlaceMoon = [
             title: "الرواق",
             image:
                 "https://firebasestorage.googleapis.com/v0/b/moon-f0010.appspot.com/o/IMG_0089.jpg?alt=media&token=465efd81-827a-4d58-9cf2-de4a1a8e60e9&_gl=1*1gi2sza*_ga*MTUyNzc4Mjg4NC4xNjk4Mzk2MjU5*_ga_CW55HF8NVT*MTY5ODM5NjI2MC4xLjEuMTY5ODM5NzQzOS42MC4wLjA.",
+            details: "نضرة شاملة على الرواق"),
+        ImagesMajala(
+            title: "صور على الرواق",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7800.JPG?alt=media&token=6bd3d3f0-a8f5-48a5-9c85-7e4559206c2d&_gl=1*1j4hpg6*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDgxMTkuNTYuMC4w",
+            details: "نضرة شاملة على الرواق"),
+        ImagesMajala(
+            title: "صور على الرواق",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7810.JPG?alt=media&token=33e6fec3-08f3-475b-bb16-50d0f6b4fd09&_gl=1*3xew41*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDgyNDcuNjAuMC4w",
+            details: "نضرة شاملة على الرواق"),
+        ImagesMajala(
+            title: "صور على الرواق",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7811.JPG?alt=media&token=1f987ed4-c89f-48f7-b664-9dd1fe840359&_gl=1*1ybtja0*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDgyOTIuMTUuMC4w",
+            details: "نضرة شاملة على الرواق"),
+        ImagesMajala(
+            title: "صور على الرواق",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7812.JPG?alt=media&token=c25afa3a-2e84-4bf4-9cd1-f6913d63435c&_gl=1*ivhx9q*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDgzMTcuNTkuMC4w",
+            details: "نضرة شاملة على الرواق"),
+        ImagesMajala(
+            title: "صور على الرواق",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7813.JPG?alt=media&token=387d27c6-2d65-4488-9a3e-569087039d58&_gl=1*kexc3l*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDgzNzAuNi4wLjA.",
+            details: "نضرة شاملة على الرواق"),
+        ImagesMajala(
+            title: "صور على الرواق",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7814.JPG?alt=media&token=16e1dd04-14a9-4e4f-b566-280b07441ec2&_gl=1*1wic4w8*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDgzOTYuNjAuMC4w",
+            details: "نضرة شاملة على الرواق"),
+        ImagesMajala(
+            title: "صور على الرواق",
+            image: "",
             details: "نضرة شاملة على الرواق"),
       ],
       index: 0),
@@ -216,6 +250,31 @@ List<Placemoon> listPlaceMoon = [
             image:
                 "https://firebasestorage.googleapis.com/v0/b/moon-f0010.appspot.com/o/IMG_0072.jpg?alt=media&token=2c665eaa-5567-42da-8add-3cc96caff94c&_gl=1*1q7rkkt*_ga*MTUyNzc4Mjg4NC4xNjk4Mzk2MjU5*_ga_CW55HF8NVT*MTY5ODM5NjI2MC4xLjEuMTY5ODM5NzMxMC41OS4wLjA.",
             details: "استمتاع التلاميذ في حصة الرسم "),
+        ImagesMajala(
+            title: "مقتطفات  ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7787.JPG?alt=media&token=dd08472d-fc80-48d6-8c02-cbdcd6b5496e&_gl=1*1r78d6f*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDg4MTEuNjAuMC4w",
+            details: "مقتطفات من قاعة الرسم "),
+        ImagesMajala(
+            title: "مقتطفات  ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7788.JPG?alt=media&token=d27b6de2-bdf6-4523-8e25-93a6d0abe546&_gl=1*5px7v6*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDg5NjUuNDYuMC4w",
+            details: "مقتطفات من قاعة الرسم "),
+        ImagesMajala(
+            title: "مقتطفات  ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7790.JPG?alt=media&token=07a29720-af5c-4c10-9b33-e8ae48dd1505&_gl=1*111usd4*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDkwNDMuNTEuMC4w",
+            details: "مقتطفات من قاعة الرسم "),
+        ImagesMajala(
+            title: "مقتطفات  ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7797.JPG?alt=media&token=f08b63ce-f7b9-4e2f-8ad2-07b466fd3dfb&_gl=1*rewspt*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDk1OTguNTkuMC4w",
+            details: "مقتطفات من قاعة الرسم "),
+        ImagesMajala(
+            title: "مقتطفات  ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7796.JPG?alt=media&token=6f807d10-7089-4969-8426-db499c5955b1&_gl=1*hqs2bq*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDk2MjguMjkuMC4w",
+            details: "مقتطفات من قاعة الرسم "),
       ],
       index: 0),
   Placemoon(
@@ -243,23 +302,121 @@ List<Placemoon> listPlaceMoon = [
             image:
                 "https://firebasestorage.googleapis.com/v0/b/moon-f0010.appspot.com/o/10.jpg?alt=media&token=374951ac-5307-42ce-abad-6614604d25d4&_gl=1*11hvefy*_ga*MTUyNzc4Mjg4NC4xNjk4Mzk2MjU5*_ga_CW55HF8NVT*MTY5ODM5NjI2MC4xLjEuMTY5ODM5Njk0MS4xNS4wLjA.",
             details: "استمتاع التلاميذ في حصة الموسيقى "),
+        ImagesMajala(
+            title: "مقتطفات  ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7780.JPG?alt=media&token=1ece6462-3631-4e59-96dd-4d190256af23&_gl=1*elwi0f*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDk4MTkuMzkuMC4w",
+            details: "مقتطفات من قاعة الموسيقى "),
+        ImagesMajala(
+            title: "مقتطفات  ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7781.JPG?alt=media&token=9b6d2787-3b9b-4b38-a96f-cbbe2d2ac8d2&_gl=1*161avo9*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDk4NDIuMTYuMC4w",
+            details: "مقتطفات من قاعة الموسيقى "),
+        ImagesMajala(
+            title: "مقتطفات  ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7782.JPG?alt=media&token=2ecf2087-5dd0-4c58-a402-ce9aaa04257c&_gl=1*1a0osqw*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDk4NTcuMS4wLjA.",
+            details: "مقتطفات من قاعة الموسيقى "),
+        ImagesMajala(
+            title: "مقتطفات  ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7783.JPG?alt=media&token=ee012cc2-cd71-4634-b8dd-a44ed4c08499&_gl=1*12nige1*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDk4OTUuMjQuMC4w",
+            details: "مقتطفات من قاعة الموسيقى "),
+        ImagesMajala(
+            title: "مقتطفات  ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7784.JPG?alt=media&token=a1305ba0-ab85-44cd-8ef1-7a45f668be33&_gl=1*1s6pr3p*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDk5MTUuNC4wLjA.",
+            details: "مقتطفات من قاعة الموسيقى "),
+        ImagesMajala(
+            title: "مقتطفات  ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7785.JPG?alt=media&token=9ddcec06-198d-4e27-8da3-aed2bea728b2&_gl=1*1alwk0v*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NDk5MjkuNTAuMC4w",
+            details: "مقتطفات من قاعة الموسيقى "),
       ],
       index: 0),
+  // Placemoon(
+  //     title: "الساحة",
+  //     avatar: 'assets/10.png',
+  //     image360: 'assets/images360/IMG_0444.jpg',
+  //     listimage: [
+  //       ImagesMajala(
+  //           title: "مقتطفات من الساحة ",
+  //           image:
+  //               "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/SAHA%2FIMG_0448.jpg?alt=media&token=de7b85fc-1c8f-43e3-a046-44abac72799b&_gl=1*u4u7vv*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQyOTkwOC4xNy4xLjE2OTk0MzAxMjYuNDEuMC4w",
+  //           details: "هنا ساحة المدرسة"),
+  //       ImagesMajala(
+  //           title: "مقتطفات من الساحة ",
+  //           image:
+  //               "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/SAHA%2FIMG_0446.jpg?alt=media&token=24b8a896-a745-4c1f-8784-956b30381481&_gl=1*1iat0gs*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQyOTkwOC4xNy4xLjE2OTk0MzAxMDcuNjAuMC4w",
+  //           details: "هنا ساحة المدرسة"),
+  //       ImagesMajala(
+  //           title: "مقتطفات من الساحة ",
+  //           image:
+  //               "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/SAHA%2FIMG_0447.jpg?alt=media&token=ae0cc19f-d4bb-41a3-804a-22ca0e47bb7e&_gl=1*99n0fl*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQyOTkwOC4xNy4xLjE2OTk0MzAxNDQuMjMuMC4w",
+  //           details: "هنا ساحة المدرسة"),
+  //     ],
+  //     index: 1),
+
   Placemoon(
-      title: "الادارة",
-      avatar: 'assets/2.png',
-      image360: 'assets/images360/IMG_0047.jpg',
+      title: "الاقسام",
+      avatar: 'assets/9.png',
+      image360: 'assets/images360/IMG_0451.jpg',
       listimage: [
         ImagesMajala(
-            title: "مقتطفات من الحصة ",
+            title: "مقتطفات من الاقسام ",
             image:
-                "https://firebasestorage.googleapis.com/v0/b/moon-f0010.appspot.com/o/2.jpg?alt=media&token=ee9f780e-f91d-419b-a0bd-b24138cbc48f&_gl=1*kpt89q*_ga*MTUyNzc4Mjg4NC4xNjk4Mzk2MjU5*_ga_CW55HF8NVT*MTY5ODM5NjI2MC4xLjEuMTY5ODM5NzMzNi4zMy4wLjA.",
-            details: "استمتاع التلاميذ في حصة الرسم "),
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7734.JPG?alt=media&token=ff6f68b8-ca36-4fd3-9249-796af04cbbae&_gl=1*1k3lqzk*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NTAxMDAuNjAuMC4w",
+            details: " اقسام مدرسة الفمر "),
         ImagesMajala(
-            title: "مقتطفات من الحصة ",
+            title: "مقتطفات من الاقسام ",
             image:
-                "https://firebasestorage.googleapis.com/v0/b/moon-f0010.appspot.com/o/2.jpg?alt=media&token=ee9f780e-f91d-419b-a0bd-b24138cbc48f&_gl=1*kpt89q*_ga*MTUyNzc4Mjg4NC4xNjk4Mzk2MjU5*_ga_CW55HF8NVT*MTY5ODM5NjI2MC4xLjEuMTY5ODM5NzMzNi4zMy4wLjA.",
-            details: "استمتاع التلاميذ في حصة الرسم "),
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7728.JPG?alt=media&token=0f9c23d8-019f-42ff-861a-a9c566e0550e&_gl=1*o63dih*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NTAxNDAuMjAuMC4w",
+            details: " اقسام مدرسة الفمر "),
+        ImagesMajala(
+            title: "مقتطفات من الاقسام ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7729.JPG?alt=media&token=74c72bc6-600b-4f9d-8351-07e811b6e4fb&_gl=1*vspe2p*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NTAxNTkuMS4wLjA.",
+            details: " اقسام مدرسة الفمر "),
+        ImagesMajala(
+            title: "مقتطفات من الاقسام ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7731.JPG?alt=media&token=6d1c939a-593b-4b42-b4e2-76f95a5694b6&_gl=1*kuteuv*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NTAxOTMuMjkuMC4w",
+            details: " اقسام مدرسة الفمر "),
+        ImagesMajala(
+            title: "مقتطفات من الاقسام ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7732.JPG?alt=media&token=245cb918-26fe-4ccd-8f8d-a3ef7c42156a&_gl=1*1bwp5g0*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NTAyMTEuMTEuMC4w",
+            details: " اقسام مدرسة الفمر "),
+        ImagesMajala(
+            title: "مقتطفات من الاقسام ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7733.JPG?alt=media&token=9d0f29f6-6247-454a-a6fc-ba2013420717&_gl=1*p0qxz7*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NTAzNjYuNTkuMC4w",
+            details: " اقسام مدرسة الفمر "),
+        ImagesMajala(
+            title: "مقتطفات من الاقسام ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7734.JPG?alt=media&token=ff6f68b8-ca36-4fd3-9249-796af04cbbae&_gl=1*1qe3vfu*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NTAzODIuNDMuMC4w",
+            details: " اقسام مدرسة الفمر "),
+        ImagesMajala(
+            title: "مقتطفات من الاقسام ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7735.JPG?alt=media&token=3a035249-ffbf-4c0c-b56d-cd3df5f64def&_gl=1*18shruy*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NTAzOTcuMjguMC4w",
+            details: " اقسام مدرسة الفمر "),
+        ImagesMajala(
+            title: "مقتطفات من الاقسام ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7736.JPG?alt=media&token=9db2ce48-ad7c-46ea-a288-3ba250de1d02&_gl=1*100xxp4*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NTA0MjIuMy4wLjA.",
+            details: " اقسام مدرسة الفمر "),
+        ImagesMajala(
+            title: "مقتطفات من الاقسام ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7737.JPG?alt=media&token=762d3ce4-6b24-4491-bc4c-ebbeb77349f4&_gl=1*1mzc3rx*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NTA0NDYuNjAuMC4w",
+            details: " اقسام مدرسة الفمر "),
+        ImagesMajala(
+            title: "مقتطفات من الاقسام ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/ALLPHOTO%C2%A3%2FIMG_7738.JPG?alt=media&token=a3d81fc0-b58f-47a9-b3ae-c6d325a675bf&_gl=1*1g0zmgu*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTQ0ODA1MS4yMC4xLjE2OTk0NTA0NjIuNDQuMC4w",
+            details: " اقسام مدرسة الفمر "),
       ],
       index: 1),
 ];

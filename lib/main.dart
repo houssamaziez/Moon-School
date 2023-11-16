@@ -49,7 +49,7 @@ class _FirestoreTestScreenState extends State<FirestoreTestScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Firestore Test Screen'),
+        title: const Text('Firestore Test Screen'),
       ),
       body: Center(
         child: Column(
@@ -71,21 +71,21 @@ class _FirestoreTestScreenState extends State<FirestoreTestScreen> {
                   post,
                 );
               },
-              child: Text('Add Document to Firestore'),
+              child: const Text('Add Document to Firestore'),
             ),
             ElevatedButton(
               onPressed: () {
                 // Update the document in Firestore
                 toggleLike(documentId, iduser, liked);
               },
-              child: Text('Toggle Like in Firestore'),
+              child: const Text('Toggle Like in Firestore'),
             ),
             ElevatedButton(
               onPressed: () {
                 // Delete a document from Firestore
                 deleteItemFromFirestore(documentId);
               },
-              child: Text('Delete Document from Firestore'),
+              child: const Text('Delete Document from Firestore'),
             ),
           ],
         ),

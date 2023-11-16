@@ -61,12 +61,15 @@ class _Demo01State extends State<Demo01> {
           print(index);
         },
         onClickItem: (index) {
-          // Navigator.push(
-          //   context,
-          //   MaterialPageRoute(
-          //     builder: (context) => widget.imageUrlList[currentIndex].pdf,
-          //   ),
-          // );
+          print(widget.imageUrlList[index].pdf);
+          widget.imageUrlList[currentIndex].pdf != null
+              ? Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => widget.imageUrlList[currentIndex].pdf,
+                  ),
+                )
+              : () {};
         },
         itemBuilder: (context, index) {
           return Padding(

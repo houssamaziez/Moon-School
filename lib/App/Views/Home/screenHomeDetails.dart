@@ -105,6 +105,14 @@ class _HomeState extends State<Home> {
                       title: listPlaceMoon[06].title,
                       image: listPlaceMoon[06].avatar,
                       indext: 06),
+                  newMethod(
+                      title: listPlaceMoon[07].title,
+                      image: listPlaceMoon[07].avatar,
+                      indext: 07),
+                  // newMethod(
+                  //     title: listPlaceMoon[08].title,
+                  //     image: listPlaceMoon[08].avatar,
+                  //     indext: 08),
                 ],
                 onStepReached: (index) => setState(() => activeStep = index),
               ),

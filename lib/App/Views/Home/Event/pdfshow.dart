@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cached_pdfview/flutter_cached_pdfview.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:take_save_display_12/App/Style/textstyle.dart';
 
 // Saving the current page index when the user leaves the PDF viewer.
 GetStorage pythondexpage = GetStorage();
@@ -33,9 +34,18 @@ class _PDFViewerCachedFromUrlState extends State<PDFViewerCachedFromUrl> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        // leading: Container(),
+        title: Text(
+          widget.title,
+          style: MyTexStyle.titlestyleHOME,
+        ),
+        elevation: 1,
+        centerTitle: true,
+      ),
       body: Column(
         children: [
-          MyAppBar(title: widget.title, name: widget.name),
+          // MyAppBar(title: widget.title, name: widget.name),
           Expanded(
             child: PDF(
               defaultPage: pythondexpage.read(widget.name) == null
@@ -108,10 +118,10 @@ class MyAppBar extends StatelessWidget {
               const Spacer(),
               SizedBox(
                 width: 30,
-                child: Text(
-                  "${pythondexpage.read(name) == null ? 0 : pythondexpage.read(name)}",
-                  style: TextStyle(color: Colors.white),
-                ),
+                // child: Text(
+                //   "${pythondexpage.read(name) == null ? 0 : pythondexpage.read(name)}",
+                //   style: TextStyle(color: Colors.white),
+                // ),
               )
             ],
           ),
