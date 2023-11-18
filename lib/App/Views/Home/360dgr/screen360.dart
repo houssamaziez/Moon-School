@@ -141,6 +141,8 @@ class PanoramaWidget extends StatelessWidget {
           child: Panorama(
             animSpeed: 1.2,
             minZoom: 0.5,
+            // animReverse: false,
+
             zoom: 0.8,
             longitude: 90,
             sensitivity: 3,

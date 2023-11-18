@@ -222,3 +222,259 @@ final List<ImagesMajala> listimagemajala4 = [
           "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%2FIMG-20221219-WA0092.jpg?alt=media&token=61e040e4-e7d1-4e04-b201-7f05d3f89063",
       details: " استمتاع التلاميذ برحلة الى حديقة الحيوان"),
 ];
+final List<ImagesMajala> listimagemajala5 = [
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0030.jpg?alt=media&token=92c6fc58-0625-4a94-b1a1-68a730a1e689",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0032.jpg?alt=media&token=8bf6205c-70db-4324-92b9-b2c4323abafb",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0057.jpg?alt=media&token=d2230467-a71b-4a6e-938f-4e32413bf960",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0094.jpg?alt=media&token=7b6cf3d6-c2f2-440d-92d5-ead479b77932",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0103.jpg?alt=media&token=a8c8a7da-7933-4bec-9796-63cf9fc65c7d",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0138.jpg?alt=media&token=30e86762-8bfa-4968-8958-03c1483dd3bb",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0141.jpg?alt=media&token=56db8eaa-e88a-4d7e-9358-516582db19e6",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0175.jpg?alt=media&token=165ef437-6d7d-4075-831d-f4ca6ff36089",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0200.jpg?alt=media&token=6d52accc-126b-4d25-b305-c2646076c2d1",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0214.jpg?alt=media&token=296b7154-f777-4ce3-960e-3296338b4b45",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0218.jpg?alt=media&token=0eadd73a-af4a-43a4-b7cd-2ccd56f33b76",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0103.jpg?alt=media&token=a8c8a7da-7933-4bec-9796-63cf9fc65c7d",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0138.jpg?alt=media&token=30e86762-8bfa-4968-8958-03c1483dd3bb",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0141.jpg?alt=media&token=56db8eaa-e88a-4d7e-9358-516582db19e6",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0290.jpg?alt=media&token=4bfcb6b4-fe02-4367-89e0-710e295691ca",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0296.jpg?alt=media&token=6e0ba5bd-0e2e-444d-a2bc-97de976804e5",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0300.jpg?alt=media&token=f25143d5-01c0-4f12-a508-c4fd74524e4f",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0354.jpg?alt=media&token=1ac976ae-dc2e-498f-98ce-f86bc94f3976",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0370.jpg?alt=media&token=9d326d0f-b103-463e-8ecc-924855111601",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+  ImagesMajala(
+      title: 'حفلة',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0440.jpg?alt=media&token=8b9b67f8-305a-4f6f-bf4c-4d4b37c09630",
+      details: "اجواء حفلة نهاية السنة الدراسية"),
+];
+final List<ImagesMajala> listimagemajala6 = [
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8223.JPG?alt=media&token=7e6e146e-5ad7-499f-8e1f-33e5fbbe1e7e",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8182.JPG?alt=media&token=f9c322b4-760c-4075-a129-b24d3fa4112f",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8191.JPG?alt=media&token=74543512-5112-49d9-a992-09e72f6dec77",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8182.JPG?alt=media&token=f9c322b4-760c-4075-a129-b24d3fa4112f",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8191.JPG?alt=media&token=74543512-5112-49d9-a992-09e72f6dec77",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8203.JPG?alt=media&token=43ec7f16-92b4-43e1-ab84-f46e8522daf3",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8241.JPG?alt=media&token=c1689dd5-1bf6-4abd-b78b-68cab4217fae",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8223.JPG?alt=media&token=7e6e146e-5ad7-499f-8e1f-33e5fbbe1e7e",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8241.JPG?alt=media&token=c1689dd5-1bf6-4abd-b78b-68cab4217fae",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8254.JPG?alt=media&token=bb68b199-9fb1-4220-9447-7b0926512b0a",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8259.JPG?alt=media&token=3208a3be-91c1-4f87-b3dc-5e4cb7efdc5d",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8269.JPG?alt=media&token=871ff2a2-7a82-4e93-9df4-61bdf2e08a37",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8271.JPG?alt=media&token=bf217b24-9133-4158-b660-50050c6a8a63",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8278.JPG?alt=media&token=cd3a0055-998c-4cfc-a25a-7d3d74a7ef6d",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8286.JPG?alt=media&token=e5c66d8c-2a05-4db5-8216-48afe1724cbc",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+  ImagesMajala(
+      title: 'مقطتفات',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8286.JPG?alt=media&token=e5c66d8c-2a05-4db5-8216-48afe1724cbc",
+      details: "مقطتطفات من المولد النبوي الشريف "),
+];
+final List<ImagesMajala> listimagemajala7 = [
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_2984.JPG?alt=media&token=3c03fc32-eca0-4ef1-a728-c9a89c9445f1",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_2990.JPG?alt=media&token=db7f66d2-8a45-4090-afce-15217b06795e",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_2996.JPG?alt=media&token=24c703ae-b2ed-44dc-8616-58b1867adde1",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_2997.JPG?alt=media&token=6dd4a0ca-792d-4e8b-b59d-6c980f372eeb",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_3085.JPG?alt=media&token=dc16c78d-af61-401d-89ce-b0fff213097e",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_3091.JPG?alt=media&token=9b6c4e1d-422b-4e5f-bfbb-86a9b51c200e",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_3094.JPG?alt=media&token=8f042391-f931-460f-ae92-f3a27240a38a",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_3096.JPG?alt=media&token=c44fb3eb-3488-4a70-beb0-5f87c3dd6c81",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_3121.JPG?alt=media&token=a41c6d88-273d-4676-afbe-7e668ef365bd",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_3129.JPG?alt=media&token=73b6b5d0-baf6-4208-b9fb-2a2bf051a46a",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_3153.JPG?alt=media&token=aa0d3330-dc83-4c97-aec3-57bdb445ce2f",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_3156.JPG?alt=media&token=f5c41cbf-b1a2-4868-bfdb-f1b6dab67b58",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_3195.JPG?alt=media&token=eef5d38e-6f36-4a16-975d-d6d15e135e26",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+  ImagesMajala(
+      title: ' مقطتفات من الرحلة ',
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_3198.JPG?alt=media&token=cdeb1139-7486-4e1b-aea7-c472817718ad",
+      details: "مقطتطفات من رحلة الى سيدي عقبة "),
+];

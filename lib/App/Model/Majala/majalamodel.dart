@@ -49,4 +49,28 @@ List<Majala> listofmajalat = [
             'https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%2F%D9%82%D8%B6%D9%8A%D9%86%D8%A7%20%D9%8A%D9%88%D9%85%D9%8B%D8%A7%20%D8%B1%D8%A7%D8%A6%D8%B9%D9%8B%D8%A7%20%D9%81%D9%8A%20%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9%20%D8%AD%D8%AF%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%20%D8%A8%D8%B9%D9%8A%D9%86%20%D9%85%D9%84%D9%8A%D9%84%D8%A9.%20%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%AC%D9%88%20%D9%85%D8%B9%D8%AA%D8%AF%D9%84%D9%8B%D8%A7%20%D9%88%D8%A7%D8%B3%D8%AA%D9%85%D8%AA%D8%B9%D9%86%D8%A7%20%D8%A8%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D8%A9%20%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20%D9%85%D8%AA%D9%86%D9%88%D8%B9%D8%A9%20%D9%85%D9%86%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%D8%A7%D8%AA%D8%8C%20%D8%A8%D9%85%D8%A7%20%D9%81%D9%8A%20%D8%B0%D9%84%D9%83%20%D8%A7%D9%84%D9%82%D8%B1%D9%88%D8%AF%D8%8C%20%D8%A7%D9%84%D9%84%D8%A7%D9%85%D8%A7%D8%8C%20%D8%A7%D9%84%D8%A3%D8%B3%D9%88%D8%AF%D8%8C%20%D8%A7%D9%84%D9%86%D9%85%D9%88%D8%B1%D8%8C%20%D8%A7%D9%84%D9%81%D9%87%D9%88%D8%AF%D8%8C%20%D8%A7%D9%84%D8%B6%D8%A8%D8%A7%D8%B9%D8%8C%20%D9%88%D8%A7%D9%84%D8%A3%D8%AD%D8%B5%D9%86%D8%A9.%20%D9%83%D9%85%D8%A7%20%D8%B4%D8%A7%D9%87%D8%AF%D9%86%D8%A7.pdf?alt=media&token=3bb70d58-138c-4026-a637-f438aae98d72',
       ),
       ListofPhoto: listimagemajala4),
+  Majala(
+      title: "المولد النبوي الشريف",
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8241.JPG?alt=media&token=c1689dd5-1bf6-4abd-b78b-68cab4217fae",
+      pdf: null,
+      ListofPhoto: listimagemajala6),
+  Majala(
+      title: "سيدي عقبة",
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_3153.JPG?alt=media&token=aa0d3330-dc83-4c97-aec3-57bdb445ce2f",
+      pdf: null,
+      ListofPhoto: listimagemajala7),
+  Majala(
+      title: "حفلة نهاية السنة",
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0032.jpg?alt=media&token=8bf6205c-70db-4324-92b9-b2c4323abafb",
+      pdf: PDFViewerCachedFromUrl(
+        name: "حفلة نهاية السنة",
+        title: "حفلة نهاية السنة",
+        indext: pythondexpage.read("حفلة نهاية السنة"),
+        url:
+            'https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2F%D8%AD%D9%81%D9%84%D8%A9%20%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B3%D9%86%D8%A9%20%D8%A8%D8%B1%D8%A8%D8%A7%D8%B4%D9%8A%20%D9%84%D9%8A%D9%86%D8%A9%20%D8%A8%D8%AF%D8%A3%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%20%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A%20%D9%88%20%D8%A7%D8%AE%D8%B0%D8%AA%20%D8%A7%D9%84%D8%A7%D9%8A%D8%A7%D9%85%20%D8%AA%D9%85%D8%B6%D9%8A%20%D9%8A%D9%88%D9%85%D8%A7%20%D8%A8%D8%B9%D8%AF%20%D9%8A%D9%88%D9%85%20%D9%85%D8%B1%D8%AA%20%D8%A7%D9%84%D9%81%D8%B5%D9%88%D9%84%20%D9%88%20%D8%AD%D9%82%D9%82%D9%86%D8%A7%20%D9%86%D8%AC%D8%A7%D8%AD%D8%A7%20%D9%83%D8%A7%D9%81%D8%A3%D8%AA%D9%86%D8%A7%20%D8%B9%D9%84%D9%8A%D9%87%20%D8%A7%D9%84%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%88%20%D9%83%D8%A7%D9%86%D8%AA%20%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%A3%D8%A9%20%D8%B9%D9%84%D9%89%20%D8%B4%D9%83%D9%84%20%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%20%D8%A7%D9%84%D8%B3%D9%86%D8%A9%20%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A%D8%A9%20%D8%A7%D9%82%D9%85%D8%A7%D8%B1%20%D9%88%20%D9%82%D9%85%D8%B1%D8%A7%D8%AA%20%D9%8A%D8%AC%D9%87.pdf?alt=media&token=dccd2ad4-b08a-482e-8be2-ce3dd4a1d18f',
+      ),
+      ListofPhoto: listimagemajala5),
 ];

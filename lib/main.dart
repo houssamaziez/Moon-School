@@ -34,62 +34,128 @@ void main() async {
 GetStorage settingsapp = GetStorage();
 GetStorage notificationList = GetStorage();
 
-class FirestoreTestScreen extends StatefulWidget {
-  @override
-  _FirestoreTestScreenState createState() => _FirestoreTestScreenState();
-}
 
-class _FirestoreTestScreenState extends State<FirestoreTestScreen> {
-  String documentId = "efzeff"; // Replace with the actual document ID
-  String iduser = "efzeff";
 
-  @override
-  Widget build(BuildContext context) {
-    bool liked = true;
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Firestore Test Screen'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                // Add a new document to Firestore
-                Post post = Post(
-                  title: 'Test Post',
-                  detail: 'This is a test post.',
-                  time: '2023-11-06 15:30:00',
-                  jams: ['jam1', 'jam2'],
-                  id: "efzeff",
-                  ispost: true,
-                );
-                addItemToFirestoreWithCustomID(
-                  "efzeff",
-                  post,
-                );
-              },
-              child: const Text('Add Document to Firestore'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                // Update the document in Firestore
-                toggleLike(documentId, iduser, liked);
-              },
-              child: const Text('Toggle Like in Firestore'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                // Delete a document from Firestore
-                deleteItemFromFirestore(documentId);
-              },
-              child: const Text('Delete Document from Firestore'),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class FirestoreTestScreen extends StatefulWidget {
+//   @override
+//   _FirestoreTestScreenState createState() => _FirestoreTestScreenState();
+// }
+
+// class _FirestoreTestScreenState extends State<FirestoreTestScreen> {
+//   String documentId = "efzeff"; // Replace with the actual document ID
+//   String iduser = "efzeff";
+
+//   @override
+//   Widget build(BuildContext context) {
+//     bool liked = true;
+
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Firestore Test Screen'),
+//       ),
+//       body: Center(
+//         child: Column(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           children: <Widget>[
+//             ElevatedButton(
+//               onPressed: () {
+//                 // Add a new document to Firestore
+//                 Post post = Post(
+//                   title: 'Test Post',
+//                   detail: 'This is a test post.',
+//                   time: '2023-11-06 15:30:00',
+//                   jams: ['jam1', 'jam2'],
+//                   id: "efzeff",
+//                   ispost: true,
+//                 );
+//                 addItemToFirestoreWithCustomID(
+//                   "efzeff",
+//                   post,
+//                 );
+//               },
+//               child: const Text('Add Document to Firestore'),
+//             ),
+//             ElevatedButton(
+//               onPressed: () {
+//                 // Update the document in Firestore
+//                 toggleLike(documentId, iduser, liked);
+//               },
+//               child: const Text('Toggle Like in Firestore'),
+//             ),
+//             ElevatedButton(
+//               onPressed: () {
+//                 // Delete a document from Firestore
+//                 deleteItemFromFirestore(documentId);
+//               },
+//               child: const Text('Delete Document from Firestore'),
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
