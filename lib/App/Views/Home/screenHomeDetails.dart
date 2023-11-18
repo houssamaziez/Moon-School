@@ -7,6 +7,7 @@ import 'package:take_save_display_12/App/Model/Home/place.dart';
 import 'package:take_save_display_12/App/Model/data.dart';
 import 'package:take_save_display_12/App/Style/textstyle.dart';
 import 'package:take_save_display_12/App/Views/Home/360dgr/screen360.dart';
+import 'package:take_save_display_12/App/Views/Home/Save/screenSave.dart';
 import 'package:take_save_display_12/App/Views/widgets/loadingPage.dart';
 
 class Home extends StatefulWidget {
@@ -45,6 +46,19 @@ class _HomeState extends State<Home> {
         ),
         elevation: 1,
         centerTitle: true,
+        actions: [
+          IconButton(
+              onPressed: () {
+                Get.to(ScrennSave());
+              },
+              icon: Image.asset(
+                'assets/bookmark.png',
+                height: 30,
+              )),
+          SizedBox(
+            width: 10,
+          )
+        ],
       ),
       body: SingleChildScrollView(
         child: Padding(

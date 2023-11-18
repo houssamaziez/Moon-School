@@ -1,9 +1,11 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_windowmanager/flutter_windowmanager.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:take_save_display_12/App/Controller/post.dart';
 import 'package:take_save_display_12/App/Model/Home/Post/post.dart';
+import 'package:take_save_display_12/App/Views/Home/Event/screenEvents.dart';
 import 'package:take_save_display_12/App/Views/Home/Notification/screenNotification.dart';
 import 'App/MyApp.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -12,9 +14,20 @@ import 'firebase_options.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await GetStorage.init();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    systemNavigationBarColor: Colors.transparent,
+  ));
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
+  if (saveListlocal3.read("keyToCheck") == null) {
+    saveListlocal3.write("keyToCheck", save);
+  } else {
+    save = saveListlocal3.read("keyToCheck");
+  }
   if (notificationList.read("list") == null) {
     notificationList.write("list", notifications);
   }
@@ -33,6 +46,8 @@ void main() async {
 
 GetStorage settingsapp = GetStorage();
 GetStorage notificationList = GetStorage();
+GetStorage saveListlocal = GetStorage();
+GetStorage saveListlocal3 = GetStorage();
 
 
 

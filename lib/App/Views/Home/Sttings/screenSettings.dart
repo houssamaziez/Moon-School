@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:take_save_display_12/App/Style/textstyle.dart';
+import 'package:take_save_display_12/App/Views/Home/Save/screenSave.dart';
 import 'package:take_save_display_12/App/Views/widgets/buttons.dart';
 import 'package:take_save_display_12/App/Views/widgets/dialogs.dart';
 import 'package:take_save_display_12/main.dart';
@@ -245,6 +246,43 @@ class _ScreenSettingsState extends State<ScreenSettings> {
                   ),
                   title: Text(
                     "مشاركة",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 236, 236, 236),
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              height: 80,
+              width: double.infinity,
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage(
+                        "assets/images/buttonSetting.png",
+                      ))),
+              child: InkWell(
+                onTap: () {
+                  Get.to(ScrennSave());
+                },
+                child: const ListTile(
+                  leading: Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Icon(
+                      Icons.bookmark_border_sharp,
+                      color: Color.fromARGB(255, 199, 199, 199),
+                    ),
+                  ),
+                  subtitle: Text(
+                    "شاهد كل الصور التي قمن بحفظها",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 189, 189, 189),
+                        fontSize: 12),
+                  ),
+                  title: Text(
+                    " المحفوظات ",
                     style: TextStyle(
                         color: Color.fromARGB(255, 236, 236, 236),
                         fontSize: 15,

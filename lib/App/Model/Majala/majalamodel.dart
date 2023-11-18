@@ -52,19 +52,31 @@ List<Majala> listofmajalat = [
   Majala(
       title: "المولد النبوي الشريف",
       image:
-          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%A7%D9%84%D9%85%D9%88%D9%84%D8%AF%20%D8%A7%D9%84%D9%86%D8%A8%D9%88%D9%8A%2FIMG_8241.JPG?alt=media&token=c1689dd5-1bf6-4abd-b78b-68cab4217fae",
+          "https://firebasestorage.googleapis.com/v0/b/moon2-16e7a.appspot.com/o/doce2%2FIMG_8271.jpg?alt=media&token=8a6f1ede-5edf-49e7-96d5-4e58a552cf3b",
       pdf: null,
       ListofPhoto: listimagemajala6),
   Majala(
       title: "سيدي عقبة",
       image:
-          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%B3%D9%8A%D8%AF%D9%8A%20%D8%B9%D9%82%D8%A8%D8%A9%2FIMG_3153.JPG?alt=media&token=aa0d3330-dc83-4c97-aec3-57bdb445ce2f",
+          "https://firebasestorage.googleapis.com/v0/b/moon3-bcbbc.appspot.com/o/bo%20s33ada%2FIMG_3153.jpg?alt=media&token=a7d64c67-eaad-4a45-8ed4-2d89bf827f46",
       pdf: null,
       ListofPhoto: listimagemajala7),
   Majala(
+      title: "الجزائر العاصمة",
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/moon3-bcbbc.appspot.com/o/alg%2FIMG-20230315-WA0051.jpg?alt=media&token=b4fa80cd-ed54-4c40-98d4-9c56d9be4b7f",
+      pdf: null,
+      ListofPhoto: listimagemajala8),
+  Majala(
+      title: "بابور",
+      image:
+          "https://firebasestorage.googleapis.com/v0/b/moon3-bcbbc.appspot.com/o/babor%2FIMG_0205.jpg?alt=media&token=b62f01c0-c0d4-4de0-8743-412defc378eb",
+      pdf: null,
+      ListofPhoto: listimagemajala9),
+  Majala(
       title: "حفلة نهاية السنة",
       image:
-          "https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2FDSC_0032.jpg?alt=media&token=8bf6205c-70db-4324-92b9-b2c4323abafb",
+          "https://firebasestorage.googleapis.com/v0/b/moon2-16e7a.appspot.com/o/DSC_0032.jpg?alt=media&token=bb6e4190-2042-4f1d-93dd-b7f780bbf250",
       pdf: PDFViewerCachedFromUrl(
         name: "حفلة نهاية السنة",
         title: "حفلة نهاية السنة",

@@ -5,10 +5,19 @@ import 'package:fade_shimmer/fade_shimmer.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gallery_3d/gallery3d.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:pie_menu/pie_menu.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:take_save_display_12/App/Model/Home/Image/showImage.dart';
 import 'package:take_save_display_12/App/Model/Majala/majalamodel.dart';
+import 'package:take_save_display_12/App/Model/Majala/photomajala.dart';
 import 'package:take_save_display_12/App/Style/textstyle.dart';
 import 'package:take_save_display_12/App/Views/widgets/loadingPage.dart';
+import 'package:take_save_display_12/App/Views/widgets/menu.dart';
+import 'package:take_save_display_12/main.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+List save = [];
 
 class Demo01 extends StatefulWidget {
   final List<Majala> imageUrlList;
@@ -87,150 +96,243 @@ class _Demo01State extends State<Demo01> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: Container(),
-        title: Text(
-          "معرض المجلة",
-          style: MyTexStyle.titlestyleHOME,
+    return PieCanvas(
+      theme: PieTheme(
+        delayDuration: Duration.zero,
+        tooltipTextStyle: const TextStyle(
+          fontSize: 32,
+          fontWeight: FontWeight.w600,
         ),
-        elevation: 1,
-        centerTitle: true,
+        tooltipUseFittedBox: true,
+        buttonTheme: const PieButtonTheme(
+          backgroundColor: Colors.black,
+          iconColor: Colors.white,
+        ),
+        buttonThemeHovered: PieButtonTheme(
+          backgroundColor: Colors.lime[200],
+          iconColor: Colors.black,
+        ),
+        overlayColor: Colors.blue[200]?.withOpacity(0.7),
+        rightClickShowsMenu: true,
       ),
-      body: Stack(
-        children: [
-          SingleChildScrollView(
-            child: Column(
-              children: [
-                Stack(
-                  children: [
-                    Container(
-                      padding: const EdgeInsets.only(top: 0),
-                      margin: const EdgeInsets.fromLTRB(10, 20, 10, 10),
-                      child: Center(child: buildGallery3D()),
-                    ),
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 23),
-                  child: Text(
-                    widget.imageUrlList[currentIndex].title,
-                    style: TextStyle(
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey),
-                  ),
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-                ListView.builder(
-                  shrinkWrap: true,
-                  controller: ScrollController(),
-                  physics: NeverScrollableScrollPhysics(),
-                  padding: EdgeInsets.zero,
-                  itemBuilder: (context, index) {
-                    return Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: InkWell(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              PageRouteBuilder(
-                                opaque: false,
-                                barrierColor:
-                                    true ? Colors.black : Colors.white,
-                                pageBuilder: (BuildContext context, _, __) {
-                                  return FullScreenPage(
-                                    child: CachedNetworkImage(
-                                      imageUrl: widget
-                                          .imageUrlList[currentIndex]
-                                          .ListofPhoto[index]
-                                          .image,
-                                      // You can also provide a placeholder image and error widget if desired.
-                                      placeholder: (context, url) =>
-                                          Center(child: spinkit),
-                                      errorWidget: (context, url, error) =>
-                                          Icon(Icons.error),
-                                    ),
-                                    dark: true,
-                                  );
-                                },
-                              ),
-                            );
-                          },
-                          child: Card(
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(
-                                  15.0), // Set card border radius
-                            ),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(
-                                  15.0), // Set image border radius
-                              child: Container(
-                                height: 350,
-                                width: double.infinity,
-                                alignment: Alignment.center,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.end,
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.all(12.0),
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(
-                                            15.0), // Set image border radius
-                                        child: CachedNetworkImage(
-                                          imageUrl: widget
-                                              .imageUrlList[currentIndex]
-                                              .ListofPhoto[index]
-                                              .image,
-                                          fit: BoxFit.cover,
-                                          height: 270,
-                                          width: double.infinity,
-                                          placeholder: (context, url) =>
-                                              Center(child: spinkit),
-                                          errorWidget: (context, url, error) =>
-                                              Icon(Icons.error),
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          const EdgeInsets.only(right: 14.0),
-                                      child: Text(
-                                        widget.imageUrlList[currentIndex]
-                                            .ListofPhoto[index].title,
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ),
-                                    // Padding(
-                                    //   padding:
-                                    //       const EdgeInsets.only(right: 14.0),
-                                    //   child: Text(
-                                    //     widget.imageUrlList[currentIndex]
-                                    //         .ListofPhoto[index].details,
-                                    //     style: TextStyle(
-                                    //         fontSize: 16, color: Colors.grey),
-                                    //   ),
-                                    // ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                        ));
-                  },
-                  itemCount:
-                      widget.imageUrlList[currentIndex].ListofPhoto.length,
-                )
-              ],
-            ),
+      child: Scaffold(
+        appBar: AppBar(
+          leading: Container(),
+          title: Text(
+            "معرض المجلة",
+            style: MyTexStyle.titlestyleHOME,
           ),
-        ],
+          elevation: 1,
+          centerTitle: true,
+        ),
+        body: Stack(
+          children: [
+            SingleChildScrollView(
+              child: Column(
+                children: [
+                  Stack(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.only(top: 0),
+                        margin: const EdgeInsets.fromLTRB(10, 20, 10, 10),
+                        child: Center(child: buildGallery3D()),
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 23),
+                    child: Text(
+                      widget.imageUrlList[currentIndex].title,
+                      style: TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  ListView.builder(
+                    shrinkWrap: true,
+                    controller: ScrollController(),
+                    physics: NeverScrollableScrollPhysics(),
+                    padding: EdgeInsets.zero,
+                    itemBuilder: (context, index) {
+                      return menu(
+                        item: widget
+                            .imageUrlList[currentIndex].ListofPhoto[index],
+                        widget: newMethod(context, index),
+                        imageUrl: widget.imageUrlList[currentIndex]
+                            .ListofPhoto[index].image,
+                      );
+                    },
+                    itemCount:
+                        widget.imageUrlList[currentIndex].ListofPhoto.length,
+                  )
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
+  }
+
+  PieMenu menu(
+      {required Widget widget, required imageUrl, required ImagesMajala item}) {
+    return PieMenu(
+      onPressed: () {
+        Navigator.push(
+          context,
+          PageRouteBuilder(
+            opaque: false,
+            barrierColor: true ? Colors.black : Colors.white,
+            pageBuilder: (BuildContext context, _, __) {
+              return FullScreenPage(
+                child: CachedNetworkImage(
+                  imageUrl: imageUrl,
+                  placeholder: (context, url) => Center(child: spinkit),
+                  errorWidget: (context, url, error) => Icon(Icons.error),
+                ),
+                dark: true,
+              );
+            },
+          ),
+        );
+      },
+      theme: PieTheme(pointerColor: Colors.amber),
+      actions: [
+        PieAction(
+          buttonTheme: PieButtonTheme(
+              backgroundColor: Colors.amber, iconColor: Colors.white),
+          tooltip: Container(),
+          onSelect: () {
+            print(save.contains(item.image));
+
+            if (saveListlocal3.read("keyToCheck") == null) {
+              saveListlocal3.write("keyToCheck", save);
+            } else {
+              save = saveListlocal3.read("keyToCheck");
+            }
+
+            if (save.contains(item.image) == false) {
+              save.add(item.image);
+              saveListlocal3.write('keyToCheck', save);
+              print(saveListlocal3.read("keyToCheck").length);
+              // عرض رسالة
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text("تم تخزين الصورة بنجاح"),
+                ),
+              );
+            } else {
+              // إذا كان العنصر موجود بالفعل
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text("لقد قمت بحفظ الصورة مسبقًا"),
+                ),
+              );
+            }
+          },
+          child: const FaIcon(FontAwesomeIcons.save),
+        ),
+        PieAction(
+          buttonTheme: PieButtonTheme(
+              backgroundColor: Colors.amber, iconColor: Colors.white),
+          tooltip: Container(),
+          onSelect: () {
+            Navigator.push(
+              context,
+              PageRouteBuilder(
+                opaque: false,
+                barrierColor: true ? Colors.black : Colors.white,
+                pageBuilder: (BuildContext context, _, __) {
+                  return FullScreenPage(
+                    child: CachedNetworkImage(
+                      imageUrl: imageUrl,
+                      placeholder: (context, url) => Center(child: spinkit),
+                      errorWidget: (context, url, error) => Icon(Icons.error),
+                    ),
+                    dark: true,
+                  );
+                },
+              ),
+            );
+          },
+          child: const FaIcon(Icons.fullscreen, size: 30),
+        ),
+        PieAction(
+          buttonTheme: PieButtonTheme(
+              backgroundColor: Colors.amber, iconColor: Colors.white),
+          tooltip: Container(),
+          onSelect: () {
+            Share.share(
+                "https://play.google.com/store/apps/details?id=com.batna.moonschool");
+          },
+          child: const FaIcon(FontAwesomeIcons.share),
+        ),
+      ],
+      child: widget,
+    );
+  }
+
+  Padding newMethod(BuildContext context, int index) {
+    return Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Card(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(15.0), // Set card border radius
+          ),
+          child: ClipRRect(
+            borderRadius:
+                BorderRadius.circular(15.0), // Set image border radius
+            child: Container(
+              height: 350,
+              width: double.infinity,
+              alignment: Alignment.center,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(
+                          15.0), // Set image border radius
+                      child: CachedNetworkImage(
+                        imageUrl: widget.imageUrlList[currentIndex]
+                            .ListofPhoto[index].image,
+                        fit: BoxFit.cover,
+                        height: 270,
+                        width: double.infinity,
+                        placeholder: (context, url) => Center(child: spinkit),
+                        errorWidget: (context, url, error) => Icon(Icons.error),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 14.0),
+                    child: Text(
+                      widget
+                          .imageUrlList[currentIndex].ListofPhoto[index].title,
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  // Padding(
+                  //   padding:
+                  //       const EdgeInsets.only(right: 14.0),
+                  //   child: Text(
+                  //     widget.imageUrlList[currentIndex]
+                  //         .ListofPhoto[index].details,
+                  //     style: TextStyle(
+                  //         fontSize: 16, color: Colors.grey),
+                  //   ),
+                  // ),
+                ],
+              ),
+            ),
+          ),
+        ));
   }
 }
 
