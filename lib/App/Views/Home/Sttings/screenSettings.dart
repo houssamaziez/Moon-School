@@ -276,7 +276,7 @@ class _ScreenSettingsState extends State<ScreenSettings> {
                     ),
                   ),
                   subtitle: Text(
-                    "شاهد كل الصور التي قمن بحفظها",
+                    "شاهد كل الصور التي قمت بحفظها",
                     style: TextStyle(
                         color: Color.fromARGB(255, 189, 189, 189),
                         fontSize: 12),
