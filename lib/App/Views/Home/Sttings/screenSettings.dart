@@ -52,7 +52,9 @@ class _ScreenSettingsState extends State<ScreenSettings> {
                     if (!settingsapp.read("viber"))
                       Vibration.vibrate(duration: 500);
                     setState(() {
-                      settingsapp.write("viber", !settingsapp.read("viber"));
+                      settingsapp
+                          .write("viber", !settingsapp.read("viber"))
+                          .then((value) => print("complet "));
                     });
                   },
                   child: Image.asset(

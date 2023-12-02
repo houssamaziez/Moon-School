@@ -23,19 +23,38 @@ List<Majala> listofmajalat = [
       title: "ركوب الخيل ",
       image:
           "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/333.jpg?alt=media&token=6bf84611-0d70-445c-8200-7d3d8fcf0ba6&_gl=1*mz37lh*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTI3ODUxNS4xMy4xLjE2OTkyNzg2NDguNTYuMC4w",
-      pdf: null,
+      pdf: PDFViewerCachedFromUrl(
+        name: "ركوب الخيل ",
+        title: "ركوب الخيل ",
+        indext: pythondexpage.read("ركوب الخيل"),
+        url:
+            'https://firebasestorage.googleapis.com/v0/b/moon2-16e7a.appspot.com/o/PDF%2Fequitation.pdf?alt=media&token=6fb7f260-5e83-4a1c-a0d0-ef75cb8c448c',
+      ),
+      //
       ListofPhoto: listimagemajala1),
   Majala(
       title: "يناير",
       image:
           "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/2222.jpg?alt=media&token=0005538f-90c8-46bf-a103-4746cc3be70e&_gl=1*wmcqdy*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTI3ODUxNS4xMy4xLjE2OTkyNzg2ODAuMjQuMC4w",
-      pdf: null,
+      pdf: PDFViewerCachedFromUrl(
+        name: "يناير",
+        title: "يناير",
+        indext: pythondexpage.read("يناير"),
+        url:
+            'https://firebasestorage.googleapis.com/v0/b/moon2-16e7a.appspot.com/o/PDF%2Fyennayer.pdf?alt=media&token=7e39eea5-1d13-4a4b-a097-a441b3b2c69c',
+      ),
       ListofPhoto: listimagemajala2),
   Majala(
       title: "كارتينغ",
       image:
           "https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/1111.jpg?alt=media&token=273d72d1-a8fc-425f-a56a-40d8b1c75b5e&_gl=1*12lwmth*_ga*MjYwNTMzMTM3LjE2OTg0ODkyMjA.*_ga_CW55HF8NVT*MTY5OTI3ODUxNS4xMy4xLjE2OTkyNzg3MDIuMi4wLjA.",
-      pdf: null,
+      pdf: PDFViewerCachedFromUrl(
+        name: "كارتينغ",
+        title: "كارتينغ",
+        indext: pythondexpage.read("كارتينغ"),
+        url:
+            'https://mail.google.com/mail/u/0/?pli=1#inbox/FMfcgzGwHfwHPxSTGTHPKsNRbBqtXWxK?projector=1',
+      ),
       ListofPhoto: listimagemajala3),
   Majala(
       title: "حديقة الحيوان",
@@ -46,7 +65,7 @@ List<Majala> listofmajalat = [
         title: "حديقة الحيوان",
         indext: pythondexpage.read("حديقة الحيوان"),
         url:
-            'https://firebasestorage.googleapis.com/v0/b/moon-school-37b5d.appspot.com/o/%D8%AD%D8%AF%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%2F%D9%82%D8%B6%D9%8A%D9%86%D8%A7%20%D9%8A%D9%88%D9%85%D9%8B%D8%A7%20%D8%B1%D8%A7%D8%A6%D8%B9%D9%8B%D8%A7%20%D9%81%D9%8A%20%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9%20%D8%AD%D8%AF%D9%8A%D9%82%D8%A9%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%20%D8%A8%D8%B9%D9%8A%D9%86%20%D9%85%D9%84%D9%8A%D9%84%D8%A9.%20%D9%83%D8%A7%D9%86%20%D8%A7%D9%84%D8%AC%D9%88%20%D9%85%D8%B9%D8%AA%D8%AF%D9%84%D9%8B%D8%A7%20%D9%88%D8%A7%D8%B3%D8%AA%D9%85%D8%AA%D8%B9%D9%86%D8%A7%20%D8%A8%D9%85%D8%B4%D8%A7%D9%87%D8%AF%D8%A9%20%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20%D9%85%D8%AA%D9%86%D9%88%D8%B9%D8%A9%20%D9%85%D9%86%20%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%D8%A7%D8%AA%D8%8C%20%D8%A8%D9%85%D8%A7%20%D9%81%D9%8A%20%D8%B0%D9%84%D9%83%20%D8%A7%D9%84%D9%82%D8%B1%D9%88%D8%AF%D8%8C%20%D8%A7%D9%84%D9%84%D8%A7%D9%85%D8%A7%D8%8C%20%D8%A7%D9%84%D8%A3%D8%B3%D9%88%D8%AF%D8%8C%20%D8%A7%D9%84%D9%86%D9%85%D9%88%D8%B1%D8%8C%20%D8%A7%D9%84%D9%81%D9%87%D9%88%D8%AF%D8%8C%20%D8%A7%D9%84%D8%B6%D8%A8%D8%A7%D8%B9%D8%8C%20%D9%88%D8%A7%D9%84%D8%A3%D8%AD%D8%B5%D9%86%D8%A9.%20%D9%83%D9%85%D8%A7%20%D8%B4%D8%A7%D9%87%D8%AF%D9%86%D8%A7.pdf?alt=media&token=3bb70d58-138c-4026-a637-f438aae98d72',
+            'https://firebasestorage.googleapis.com/v0/b/moon2-16e7a.appspot.com/o/PDF%2Fzoo.pdf?alt=media&token=770b6f4a-d8b8-4920-9009-da67ec43532d',
       ),
       ListofPhoto: listimagemajala4),
   Majala(
@@ -58,8 +77,14 @@ List<Majala> listofmajalat = [
   Majala(
       title: "سيدي عقبة",
       image:
-          "https://firebasestorage.googleapis.com/v0/b/moon3-bcbbc.appspot.com/o/bo%20s33ada%2FIMG_3153.jpg?alt=media&token=a7d64c67-eaad-4a45-8ed4-2d89bf827f46",
-      pdf: null,
+          "https://fibladi.com/plus/wp-content/uploads/2021/05/117655881_3055287071237114_5047945194123368971_n.jpg",
+      pdf: PDFViewerCachedFromUrl(
+        name: "سيدي عقبة",
+        title: "سيدي عقبة",
+        indext: pythondexpage.read("سيدي عقبة"),
+        url:
+            'https://firebasestorage.googleapis.com/v0/b/moon2-16e7a.appspot.com/o/PDF%2Fsidi%20okba.pdf?alt=media&token=a0842668-a3e2-409e-b2d4-3b2d127c3b41',
+      ),
       ListofPhoto: listimagemajala7),
   Majala(
       title: "الجزائر العاصمة",
@@ -71,7 +96,14 @@ List<Majala> listofmajalat = [
       title: "بابور",
       image:
           "https://firebasestorage.googleapis.com/v0/b/moon3-bcbbc.appspot.com/o/babor%2FIMG_0205.jpg?alt=media&token=b62f01c0-c0d4-4de0-8743-412defc378eb",
-      pdf: null,
+      pdf: PDFViewerCachedFromUrl(
+        name: "بابور",
+        title: "بابور",
+        indext: pythondexpage.read("بابور"),
+        url:
+            'https://firebasestorage.googleapis.com/v0/b/moon2-16e7a.appspot.com/o/PDF%2Fbabor.pdf?alt=media&token=b6a26171-ecf6-4ac1-9e2f-f65dd5a71be2',
+      ),
+      //
       ListofPhoto: listimagemajala9),
   Majala(
       title: "حفلة نهاية السنة",
@@ -82,7 +114,7 @@ List<Majala> listofmajalat = [
         title: "حفلة نهاية السنة",
         indext: pythondexpage.read("حفلة نهاية السنة"),
         url:
-            'https://firebasestorage.googleapis.com/v0/b/myapp-cd0a2.appspot.com/o/%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%2F%D8%AD%D9%81%D9%84%D8%A9%20%D9%86%D9%87%D8%A7%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B3%D9%86%D8%A9%20%D8%A8%D8%B1%D8%A8%D8%A7%D8%B4%D9%8A%20%D9%84%D9%8A%D9%86%D8%A9%20%D8%A8%D8%AF%D8%A3%20%D8%A7%D9%84%D8%B9%D8%A7%D9%85%20%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A%20%D9%88%20%D8%A7%D8%AE%D8%B0%D8%AA%20%D8%A7%D9%84%D8%A7%D9%8A%D8%A7%D9%85%20%D8%AA%D9%85%D8%B6%D9%8A%20%D9%8A%D9%88%D9%85%D8%A7%20%D8%A8%D8%B9%D8%AF%20%D9%8A%D9%88%D9%85%20%D9%85%D8%B1%D8%AA%20%D8%A7%D9%84%D9%81%D8%B5%D9%88%D9%84%20%D9%88%20%D8%AD%D9%82%D9%82%D9%86%D8%A7%20%D9%86%D8%AC%D8%A7%D8%AD%D8%A7%20%D9%83%D8%A7%D9%81%D8%A3%D8%AA%D9%86%D8%A7%20%D8%B9%D9%84%D9%8A%D9%87%20%D8%A7%D9%84%D9%85%D8%A4%D8%B3%D8%B3%D8%A9%20%D9%88%20%D9%83%D8%A7%D9%86%D8%AA%20%D9%87%D8%B0%D9%87%20%D8%A7%D9%84%D9%85%D9%83%D8%A7%D9%81%D8%A3%D8%A9%20%D8%B9%D9%84%D9%89%20%D8%B4%D9%83%D9%84%20%D8%AD%D9%81%D9%84%20%D9%81%D9%8A%20%D8%A2%D8%AE%D8%B1%20%D8%A7%D9%84%D8%B3%D9%86%D8%A9%20%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D9%8A%D8%A9%20%D8%A7%D9%82%D9%85%D8%A7%D8%B1%20%D9%88%20%D9%82%D9%85%D8%B1%D8%A7%D8%AA%20%D9%8A%D8%AC%D9%87.pdf?alt=media&token=dccd2ad4-b08a-482e-8be2-ce3dd4a1d18f',
+            'https://firebasestorage.googleapis.com/v0/b/moon2-16e7a.appspot.com/o/PDF%2Ffin%20d\'ann%C3%A9e.pdf?alt=media&token=dc0ced9e-e538-471f-b4db-2de4a74a6a77',
       ),
       ListofPhoto: listimagemajala5),
 ];

@@ -86,68 +86,70 @@ class _ScreenHomeState extends State<ScreenHome> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          listscreenBACK[_bottomNavIndex],
-          Scaffold(
-            body: listscreen[_bottomNavIndex],
-            floatingActionButtonLocation:
-                FloatingActionButtonLocation.centerDocked,
-            backgroundColor: Colors.transparent,
-          ),
-          Positioned(
-            bottom: 0,
-            left: 0,
-            right: 0,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Card(
-                elevation: 4,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(
-                      16.0), // Change the radius value as needed
-                ),
-                child: BottomBarBubble(
-                  height: 50,
-                  selectedIndex: _bottomNavIndex,
-                  color: Color.fromARGB(255, 255, 217, 5),
-                  onSelect: (index) {
-                    setState(() {
-                      if (settingsapp.read("viber"))
-                        Vibration.vibrate(duration: 100);
+    return SafeArea(
+      child: Scaffold(
+        body: Stack(
+          children: [
+            listscreenBACK[_bottomNavIndex],
+            Scaffold(
+              body: listscreen[_bottomNavIndex],
+              floatingActionButtonLocation:
+                  FloatingActionButtonLocation.centerDocked,
+              backgroundColor: Colors.transparent,
+            ),
+            Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Card(
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(
+                        16.0), // Change the radius value as needed
+                  ),
+                  child: BottomBarBubble(
+                    height: 50,
+                    selectedIndex: _bottomNavIndex,
+                    color: Color.fromARGB(255, 255, 217, 5),
+                    onSelect: (index) {
+                      setState(() {
+                        if (settingsapp.read("viber"))
+                          Vibration.vibrate(duration: 100);
 
-                      _bottomNavIndex = index;
-                    });
-                  },
-                  backgroundColor: Colors.transparent,
-                  items: [
-                    BottomBarItem(
-                      iconData: Icons.home,
-                      // label: 'Home',
-                    ),
-                    // BottomBarItem(
-                    //   iconData: Icons.chat,
-                    //   // label: 'Chat',
-                    // ),
-                    BottomBarItem(
-                      iconData: Icons.dynamic_feed,
-                      // label: 'Notification',
-                    ),
-                    BottomBarItem(
-                      iconData: Icons.notification_important,
-                      // label: 'Notification',
-                    ),
-                    BottomBarItem(
-                      iconData: Icons.settings,
-                      // label: 'Setting',
-                    ),
-                  ],
+                        _bottomNavIndex = index;
+                      });
+                    },
+                    backgroundColor: Colors.transparent,
+                    items: [
+                      BottomBarItem(
+                        iconData: Icons.home,
+                        // label: 'Home',
+                      ),
+                      // BottomBarItem(
+                      //   iconData: Icons.chat,
+                      //   // label: 'Chat',
+                      // ),
+                      BottomBarItem(
+                        iconData: Icons.dynamic_feed,
+                        // label: 'Notification',
+                      ),
+                      BottomBarItem(
+                        iconData: Icons.notification_important,
+                        // label: 'Notification',
+                      ),
+                      BottomBarItem(
+                        iconData: Icons.settings,
+                        // label: 'Setting',
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

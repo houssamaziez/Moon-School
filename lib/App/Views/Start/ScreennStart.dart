@@ -12,60 +12,66 @@ class ScreenStart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.transparent,
-      body: Stack(
-        children: [
-          Center(
-            child: Image.asset(
-              "assets/images/back1.jpg",
-              height: double.infinity,
-              width: double.infinity,
-              fit: BoxFit.fill,
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: Stack(
+          children: [
+            Center(
+              child: Image.asset(
+                "assets/images/back1.jpg",
+                height: double.infinity,
+                width: double.infinity,
+                fit: BoxFit.fill,
+              ),
             ),
-          ),
-          Positioned(
-            bottom: 0,
-            right: 0,
-            child: MyButtons.flotbutton(),
-          ),
-          Center(
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.5,
-              child: GetBuilder<ControllerStart>(
-                  init: ControllerStart(),
-                  builder: (_controller) {
-                    return PageView.builder(
-                      controller: _controller.controllerpage,
-                      itemCount: listStart.length,
-                      itemBuilder: (context, index) => Container(
-                        height: MediaQuery.of(context).size.height * 0.5,
-                        width: double.infinity,
-                        child: Column(
-                          children: [
-                            Image.asset(
-                              listStart[index].image,
-                              height: MediaQuery.of(context).size.height * 0.3,
-                            ),
-                            Text(listStart[index].title,
-                                style: MyTexStyle.titlestyle),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text(listStart[index].details,
-                                  textAlign: TextAlign.center,
-                                  style: MyTexStyle.suptitlestyle),
-                            ),
-                          ],
+            Positioned(
+              bottom: 0,
+              right: 0,
+              child: MyButtons.flotbutton(),
+            ),
+            Center(
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.5,
+                child: GetBuilder<ControllerStart>(
+                    init: ControllerStart(),
+                    builder: (_controller) {
+                      return PageView.builder(
+                        controller: _controller.controllerpage,
+                        itemCount: listStart.length,
+                        itemBuilder: (context, index) => Container(
+                          height: MediaQuery.of(context).size.height * 0.5,
+                          width: double.infinity,
+                          child: Column(
+                            children: [
+                              listStart[index].title != "مزايا التطبيق "
+                                  ? Image.asset(
+                                      listStart[index].image,
+                                      height:
+                                          MediaQuery.of(context).size.height *
+                                              0.3,
+                                    )
+                                  : Container(),
+                              Text(listStart[index].title,
+                                  style: MyTexStyle.titlestyle),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Text(listStart[index].details,
+                                    textAlign: TextAlign.center,
+                                    style: MyTexStyle.suptitlestyle),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                    );
-                  }),
-            ),
-          )
-        ],
+                      );
+                    }),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

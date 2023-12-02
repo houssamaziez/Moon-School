@@ -2,9 +2,9 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:pie_menu/pie_menu.dart';
+
 import 'package:share_plus/share_plus.dart';
 import 'package:take_save_display_12/App/Model/Home/Image/showImage.dart';
-import 'package:take_save_display_12/App/Model/Majala/photomajala.dart';
 import 'package:take_save_display_12/App/Style/textstyle.dart';
 import 'package:take_save_display_12/App/Views/Home/Event/screenEvents.dart';
 import 'package:take_save_display_12/App/Views/widgets/loadingPage.dart';
@@ -18,6 +18,7 @@ class ScrennSave extends StatefulWidget {
 }
 
 class _ScrennSaveState extends State<ScrennSave> {
+  List list = saveListlocal.read("keyToCheck");
   @override
   Widget build(BuildContext context) {
     PieMenu menu({required Widget widget, required imageUrl, required item}) {
@@ -48,17 +49,12 @@ class _ScrennSaveState extends State<ScrennSave> {
                 backgroundColor: Colors.amber, iconColor: Colors.red),
             tooltip: Container(),
             onSelect: () {
-              if (saveListlocal3.read("keyToCheck") == null) {
-                saveListlocal3.write("keyToCheck", save);
-              } else {
-                save = saveListlocal3.read("keyToCheck");
-              }
-
+              save = saveListlocal.read("keyToCheck");
               if (save.contains(item) != false) {
                 save.remove(item);
                 setState(() {});
-                saveListlocal3.write('keyToCheck', save);
-                print(saveListlocal3.read("keyToCheck").length);
+                saveListlocal.write('keyToCheck', save);
+                print(saveListlocal.read("keyToCheck").length);
                 // عرض رسالة
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
@@ -135,10 +131,10 @@ class _ScrennSaveState extends State<ScrennSave> {
           itemBuilder: (context, index) {
             return menu(
                 widget: newMethod(context, index),
-                imageUrl: saveListlocal3.read("keyToCheck")[index],
-                item: saveListlocal3.read("keyToCheck")[index]);
+                imageUrl: list[index],
+                item: list[index]);
           },
-          itemCount: saveListlocal3.read("keyToCheck").length,
+          itemCount: list.length,
         ),
       ),
     );
@@ -167,7 +163,7 @@ class _ScrennSaveState extends State<ScrennSave> {
                       borderRadius: BorderRadius.circular(
                           15.0), // Set image border radius
                       child: CachedNetworkImage(
-                        imageUrl: saveListlocal3.read("keyToCheck")[index],
+                        imageUrl: saveListlocal.read("keyToCheck")[index],
                         fit: BoxFit.cover,
                         height: 320,
                         width: double.infinity,

@@ -6,14 +6,17 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gallery_3d/gallery3d.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 import 'package:pie_menu/pie_menu.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:take_save_display_12/App/Controller/controllermodel.dart';
 import 'package:take_save_display_12/App/Model/Home/Image/showImage.dart';
 import 'package:take_save_display_12/App/Model/Majala/majalamodel.dart';
 import 'package:take_save_display_12/App/Model/Majala/photomajala.dart';
 import 'package:take_save_display_12/App/Style/textstyle.dart';
 import 'package:take_save_display_12/App/Views/widgets/loadingPage.dart';
 import 'package:take_save_display_12/App/Views/widgets/menu.dart';
+import 'package:take_save_display_12/App/Views/widgets/shwa.dart';
 import 'package:take_save_display_12/main.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -28,12 +31,12 @@ class Demo01 extends StatefulWidget {
 }
 
 class _Demo01State extends State<Demo01> {
-  int currentIndex = 0;
-
+  Controlle3D controller2 = Get.put(Controlle3D());
   late Gallery3DController controller;
 
   @override
   void initState() {
+    print("fffffffffffff");
     controller = Gallery3DController(
         itemCount: widget.imageUrlList.length,
         autoLoop: false,
@@ -44,6 +47,12 @@ class _Demo01State extends State<Demo01> {
     // controller.animateTo(2);
   }
 
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
+
   Widget buildGallery3D() {
     return Gallery3D(
         controller: controller,
@@ -52,30 +61,25 @@ class _Demo01State extends State<Demo01> {
             width: 170,
             height: MediaQuery.of(context).size.height * 0.3,
             radius: 10,
-            isShowTransformMask: true,
             shadows: [
               const BoxShadow(
                   color: Color(0x90000000), offset: Offset(3, 2), blurRadius: 2)
             ]),
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height * 0.3,
-        isClip: true,
-
         // currentIndex: currentIndex,
         onItemChanged: (index) {
-          setState(() {
-            this.currentIndex = index;
-          });
-
-          print(index);
+          controller2.changeindext(index);
+          // print(index);
         },
         onClickItem: (index) {
-          print(widget.imageUrlList[index].pdf);
-          widget.imageUrlList[currentIndex].pdf != null
+          // print(widget.imageUrlList[index].pdf);
+          widget.imageUrlList[controller2.currentIndex].pdf != null
               ? Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => widget.imageUrlList[currentIndex].pdf,
+                    builder: (context) =>
+                        widget.imageUrlList[controller2.currentIndex].pdf,
                   ),
                 )
               : () {};
@@ -124,6 +128,7 @@ class _Demo01State extends State<Demo01> {
           ),
           elevation: 1,
           centerTitle: true,
+          actions: [Button()],
         ),
         body: Stack(
           children: [
@@ -141,34 +146,43 @@ class _Demo01State extends State<Demo01> {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 23),
-                    child: Text(
-                      widget.imageUrlList[currentIndex].title,
-                      style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.grey),
-                    ),
+                    child: GetBuilder<Controlle3D>(
+                        init: Controlle3D(),
+                        builder: (conte) {
+                          return Text(
+                            widget.imageUrlList[conte.currentIndex].title,
+                            style: TextStyle(
+                                fontSize: 25,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey),
+                          );
+                        }),
                   ),
                   SizedBox(
                     height: 10,
                   ),
-                  ListView.builder(
-                    shrinkWrap: true,
-                    controller: ScrollController(),
-                    physics: NeverScrollableScrollPhysics(),
-                    padding: EdgeInsets.zero,
-                    itemBuilder: (context, index) {
-                      return menu(
-                        item: widget
-                            .imageUrlList[currentIndex].ListofPhoto[index],
-                        widget: newMethod(context, index),
-                        imageUrl: widget.imageUrlList[currentIndex]
-                            .ListofPhoto[index].image,
-                      );
-                    },
-                    itemCount:
-                        widget.imageUrlList[currentIndex].ListofPhoto.length,
-                  )
+                  GetBuilder<Controlle3D>(
+                      init: Controlle3D(),
+                      builder: (conte) {
+                        return ListView.builder(
+                          shrinkWrap: true,
+                          controller: ScrollController(),
+                          physics: NeverScrollableScrollPhysics(),
+                          padding: EdgeInsets.zero,
+                          itemBuilder: (context, index) {
+                            return menu(
+                              item: widget.imageUrlList[conte.currentIndex]
+                                  .ListofPhoto[index],
+                              widget: newMethod(context, index),
+                              imageUrl: widget.imageUrlList[conte.currentIndex]
+                                  .ListofPhoto[index].image,
+                            );
+                          },
+                          // itemCount: widget.imageUrlList[conte.currentIndex]
+                          //     .ListofPhoto.length,
+                          itemCount: 8,
+                        );
+                      })
                 ],
               ),
             ),
@@ -207,18 +221,16 @@ class _Demo01State extends State<Demo01> {
               backgroundColor: Colors.amber, iconColor: Colors.white),
           tooltip: Container(),
           onSelect: () {
-            print(save.contains(item.image));
-
-            if (saveListlocal3.read("keyToCheck") == null) {
-              saveListlocal3.write("keyToCheck", save);
+            if (saveListlocal.read("keyToCheck") == null) {
+              saveListlocal.write("keyToCheck", save);
             } else {
-              save = saveListlocal3.read("keyToCheck");
+              save = saveListlocal.read("keyToCheck");
             }
 
             if (save.contains(item.image) == false) {
               save.add(item.image);
-              saveListlocal3.write('keyToCheck', save);
-              print(saveListlocal3.read("keyToCheck").length);
+              saveListlocal.write('keyToCheck', save);
+              print(saveListlocal.read("keyToCheck").length);
               // عرض رسالة
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
@@ -298,25 +310,38 @@ class _Demo01State extends State<Demo01> {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(
                           15.0), // Set image border radius
-                      child: CachedNetworkImage(
-                        imageUrl: widget.imageUrlList[currentIndex]
-                            .ListofPhoto[index].image,
-                        fit: BoxFit.cover,
-                        height: 270,
-                        width: double.infinity,
-                        placeholder: (context, url) => Center(child: spinkit),
-                        errorWidget: (context, url, error) => Icon(Icons.error),
-                      ),
+                      child: GetBuilder<Controlle3D>(
+                          init: Controlle3D(),
+                          builder: (conte) {
+                            return CachedNetworkImage(
+                              maxHeightDiskCache:
+                                  600, // الحد الأقصى لارتفاع الصورة المخزنة
+                              maxWidthDiskCache: 600,
+                              imageUrl: widget.imageUrlList[conte.currentIndex]
+                                  .ListofPhoto[index].image,
+                              fit: BoxFit.cover,
+                              height: 270,
+                              width: double.infinity,
+                              placeholder: (context, url) =>
+                                  Center(child: spinkit),
+                              errorWidget: (context, url, error) =>
+                                  Icon(Icons.error),
+                            );
+                          }),
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(right: 14.0),
-                    child: Text(
-                      widget
-                          .imageUrlList[currentIndex].ListofPhoto[index].title,
-                      style:
-                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                    ),
+                    child: GetBuilder<Controlle3D>(
+                        init: Controlle3D(),
+                        builder: (conte) {
+                          return Text(
+                            widget.imageUrlList[conte.currentIndex]
+                                .ListofPhoto[index].title,
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold),
+                          );
+                        }),
                   ),
                   // Padding(
                   //   padding:

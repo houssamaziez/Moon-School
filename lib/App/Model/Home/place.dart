@@ -31,6 +31,16 @@ List<Placemoon> listPlaceMoon = [
             image:
                 "https://firebasestorage.googleapis.com/v0/b/moon-f0010.appspot.com/o/5.jpg?alt=media&token=492a69d4-7357-404d-8931-2c0a9f29da8a&_gl=1*193v6d9*_ga*MTUyNzc4Mjg4NC4xNjk4Mzk2MjU5*_ga_CW55HF8NVT*MTY5ODM5NjI2MC4xLjEuMTY5ODM5NjczNi4zMy4wLjA.",
             details: "مدرسة القمر الخاصة"),
+        ImagesMajala(
+            title: "الابتدائية ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon2-16e7a.appspot.com/o/IMGE%2FIMG_20231120_123348_526.jpg?alt=media&token=7e05f93e-56c4-4fe5-8091-e63d93dce51f",
+            details: "مدرسة الابتدائية الخاصة"),
+        ImagesMajala(
+            title: "الابتدائية ",
+            image:
+                "https://firebasestorage.googleapis.com/v0/b/moon2-16e7a.appspot.com/o/IMGE%2FIMG_20231120_123348_860.jpg?alt=media&token=d60b6fed-024a-414e-841f-de0920afbaf7",
+            details: "مدرسة الابتدائية الخاصة"),
       ],
       index: 0),
   Placemoon(
